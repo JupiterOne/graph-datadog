@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#fetchUsers should collect data 1`] = `
+Object {
+  "collectedEntities": Array [
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:development@jupiterone.dev",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "accessRole": "adm",
+            "disabled": false,
+            "email": "development@jupiterone.dev",
+            "handle": "development@jupiterone.dev",
+            "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
+            "name": "JupiterOne Development",
+            "verified": true,
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "accessRole": "adm",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "JupiterOne Development",
+      "email": "development@jupiterone.dev",
+      "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
+      "id": "development@jupiterone.dev",
+      "name": "JupiterOne Development",
+      "username": "development@jupiterone.dev",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:viragsf@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "accessRole": "adm",
+            "disabled": false,
+            "email": "viragsf@gmail.com",
+            "handle": "viragsf@gmail.com",
+            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "name": null,
+            "verified": true,
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "accessRole": "adm",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "",
+      "email": "viragsf@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+      "id": "viragsf@gmail.com",
+      "name": "",
+      "username": "viragsf@gmail.com",
+      "verified": true,
+    },
+  ],
+  "collectedRelationships": Array [],
+  "encounteredTypes": Array [
+    "datadog_user",
+  ],
+  "numCollectedEntities": 2,
+  "numCollectedRelationships": 0,
+}
+`;
