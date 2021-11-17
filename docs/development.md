@@ -1,28 +1,28 @@
 # Development
 
-Add details here to give a brief overview of how to work with the provider APIs.
-Please reference any SDKs or API docs used to help build the integration here.
-
-## Prerequisites
-
-Supply details about software or tooling (like maybe Docker or Terraform) that
-is needed for development here.
-
-Please supply references to documentation that details how to install those
-dependencies here.
-
-Tools like Node.js and NPM are already covered in the [README](../README.md) so
-don't bother documenting that here.
+This integration focuses on [Datadog](https://www.datadoghq.com/) and is using
+the [Datadog API](https://docs.datadoghq.com/api/) for interacting with the
+Datadog resources.
 
 ## Provider account setup
 
-Please provide information about the steps needed to create an account with a
-provider. Images and references to a provider's documentation is very helpful
-for new developers picking up your work.
+This integration needs a Datadog account, an API key and an application key.
+
+Follow these steps to obtain these credentials:
+
+1. Register for a Datadog account.
+2. Create an API key by going to
+   https://app.datadoghq.com/organization-settings/api-keys. (click on 'New Key'
+   at the top right corner)
+3. Create an application key by going to
+   https://app.datadoghq.com/organization-settings/application-keys. (click on
+   'New Key' at the top right corner)
+4. Take note of these credentials and supply them to the integration's
+   [.env file](../env.example).
+
+The integration is now ready.
 
 ## Authentication
 
-Supply details here for information on how to authenticate with a provider so
-that developers have an idea of what's needed to hit APIs. It may be useful to
-provide explanations for each value specified in the
-[`IntegrationInstanceConfigFieldMap`](../src/config.ts).
+Once you have supplied the credentials to the `.env` file, the integration will
+pull the `EMAIL`, `API_KEY` and `APP_KEY` from there.

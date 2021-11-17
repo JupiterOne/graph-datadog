@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#fetchAccount should collect data 1`] = `
+Object {
+  "collectedEntities": Array [
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_account:viragsf@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "accessRole": "adm",
+            "disabled": false,
+            "email": "viragsf@gmail.com",
+            "handle": "viragsf@gmail.com",
+            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "name": null,
+            "verified": true,
+          },
+        },
+      ],
+      "_type": "datadog_account",
+      "accessRole": "adm",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "viragsf@gmail.com",
+      "email": "viragsf@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+      "id": "viragsf@gmail.com",
+      "name": "viragsf@gmail.com",
+      "username": "viragsf@gmail.com",
+      "verified": true,
+    },
+  ],
+  "collectedRelationships": Array [],
+  "encounteredTypes": Array [
+    "datadog_account",
+  ],
+  "numCollectedEntities": 1,
+  "numCollectedRelationships": 0,
+}
+`;

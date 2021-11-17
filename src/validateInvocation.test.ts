@@ -30,8 +30,9 @@ it('auth error', async () => {
 
   const executionContext = createMockExecutionContext({
     instanceConfig: {
-      clientId: 'INVALID',
-      clientSecret: 'INVALID',
+      datadogApiKey: 'INVALID',
+      datadogAppKey: 'INVALID',
+      datadogAccountEmail: 'INVALID',
     },
   });
 
