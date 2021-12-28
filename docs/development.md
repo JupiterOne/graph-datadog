@@ -13,10 +13,12 @@ Follow these steps to obtain these credentials:
 1. Register for a Datadog account.
 2. Create an API key by going to
    https://app.datadoghq.com/organization-settings/api-keys. (click on 'New Key'
-   at the top right corner)
+   at the top right corner). The account must have the "Datadog Admin Role" to
+   be able to generate an API key.
 3. Create an application key by going to
    https://app.datadoghq.com/organization-settings/application-keys. (click on
-   'New Key' at the top right corner)
+   'New Key' at the top right corner). An account with any role can generate
+   application key.
 4. Take note of these credentials and supply them to the integration's
    [.env file](../env.example).
 
