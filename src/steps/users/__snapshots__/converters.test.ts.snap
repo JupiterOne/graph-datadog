@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#createUserEntity should convert to entity 1`] = `
+Object {
+  "_class": Array [
+    "User",
+  ],
+  "_key": "datadog_user:viragsf@gmail.com",
+  "_rawData": Array [
+    Object {
+      "name": "default",
+      "rawData": Object {
+        "attributes": Object {
+          "createdAt": 2021-11-16T18:25:08.049Z,
+          "disabled": false,
+          "email": "viragsf@gmail.com",
+          "handle": "viragsf@gmail.com",
+          "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+          "modifiedAt": 2021-11-16T18:27:43.851Z,
+          "serviceAccount": false,
+          "status": "Active",
+          "verified": true,
+        },
+        "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
+        "relationships": Object {
+          "org": Object {
+            "data": Object {
+              "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+              "type": "orgs",
+            },
+          },
+          "roles": Object {
+            "data": Array [
+              Object {
+                "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                "type": "roles",
+              },
+            ],
+          },
+        },
+        "type": "users",
+      },
+    },
+  ],
+  "_type": "datadog_user",
+  "createdOn": undefined,
+  "disabled": false,
+  "displayName": "viragsf@gmail.com",
+  "email": "viragsf@gmail.com",
+  "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+  "id": "viragsf@gmail.com",
+  "name": "viragsf@gmail.com",
+  "username": "viragsf@gmail.com",
+  "verified": true,
+}
+`;

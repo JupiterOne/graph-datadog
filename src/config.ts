@@ -21,12 +21,16 @@ import { createAPIClient } from './client';
  * `instance.config` in a UI.
  */
 export const instanceConfigFields: IntegrationInstanceConfigFieldMap = {
-  clientId: {
-    type: 'string',
-  },
-  clientSecret: {
+  datadogApiKey: {
     type: 'string',
     mask: true,
+  },
+  datadogAppKey: {
+    type: 'string',
+    mask: true,
+  },
+  datadogAccountEmail: {
+    type: 'string',
   },
 };
 
@@ -35,15 +39,9 @@ export const instanceConfigFields: IntegrationInstanceConfigFieldMap = {
  * same properties defined by `instanceConfigFields`.
  */
 export interface IntegrationConfig extends IntegrationInstanceConfig {
-  /**
-   * The provider API client ID used to authenticate requests.
-   */
-  clientId: string;
-
-  /**
-   * The provider API client secret used to authenticate requests.
-   */
-  clientSecret: string;
+  datadogApiKey: string;
+  datadogAppKey: string;
+  datadogAccountEmail: string;
 }
 
 export async function validateInvocation(
@@ -51,9 +49,13 @@ export async function validateInvocation(
 ) {
   const { config } = context.instance;
 
-  if (!config.clientId || !config.clientSecret) {
+  if (
+    !config.datadogApiKey ||
+    !config.datadogAppKey ||
+    !config.datadogAccountEmail
+  ) {
     throw new IntegrationValidationError(
-      'Config requires all of {clientId, clientSecret}',
+      'Config requires all of {apiKey,appKey,email}',
     );
   }
 

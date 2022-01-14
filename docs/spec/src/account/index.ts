@@ -4,16 +4,16 @@ import { IntegrationConfig } from '../../../../src/config';
 export const accountSpec: StepSpec<IntegrationConfig>[] = [
   {
     /**
-     * ENDPOINT: n/a
-     * PATTERN: Singleton
+     * ENDPOINT: https://api.datadoghq.com/api/v2/users/{user_id}
+     * PATTERN: Singleton Entity
      */
     id: 'fetch-account',
-    name: 'Fetch Account Details',
+    name: 'Fetch Account',
     entities: [
       {
         resourceName: 'Account',
-        _type: 'acme_account',
-        _class: ['Account'],
+        _type: 'datadog_account',
+        _class: ['User'],
       },
     ],
     relationships: [],
