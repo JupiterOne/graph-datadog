@@ -7,31 +7,31 @@ Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:stefan@creativice.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
-            "accessRole": "adm",
+            "accessRole": "st",
             "disabled": false,
-            "email": "viragsf@gmail.com",
-            "handle": "viragsf@gmail.com",
-            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "email": "stefan@creativice.com",
+            "handle": "stefan@creativice.com",
+            "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
             "name": null,
             "verified": true,
           },
         },
       ],
       "_type": "datadog_account",
-      "accessRole": "adm",
+      "accessRole": "st",
       "createdOn": undefined,
       "disabled": false,
-      "displayName": "viragsf@gmail.com",
-      "email": "viragsf@gmail.com",
-      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-      "id": "viragsf@gmail.com",
-      "name": "viragsf@gmail.com",
-      "username": "viragsf@gmail.com",
+      "displayName": "stefan@creativice.com",
+      "email": "stefan@creativice.com",
+      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+      "id": "stefan@creativice.com",
+      "name": "stefan@creativice.com",
+      "username": "stefan@creativice.com",
       "verified": true,
     },
     Object {
@@ -75,10 +75,6 @@ Object {
                   },
                   RelationshipToPermissionData {
                     "id": "87b00304-dd12-11e8-9e59-cbeb5f71f72f",
-                    "type": "permissions",
-                  },
-                  RelationshipToPermissionData {
-                    "id": "1a92ede2-6cb2-11e9-99c6-2b3a4a0cdf0a",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -333,6 +329,14 @@ Object {
                     "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "020a563c-56a4-11ec-a982-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -440,6 +444,10 @@ Object {
                     "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -469,7 +477,7 @@ Object {
               "createdAt": 2021-11-15T15:06:20.176Z,
               "modifiedAt": 2021-11-15T15:06:20.176Z,
               "name": "Datadog Standard Role",
-              "userCount": 0,
+              "userCount": 1,
             },
             "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
             "relationships": RoleResponseRelationships {
@@ -671,6 +679,10 @@ Object {
                     "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -685,23 +697,31 @@ Object {
       "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
       "modifiedAt": 1636988780176,
       "name": "Datadog Standard Role",
-      "userCount": 0,
+      "userCount": 1,
     },
   ],
   "collectedRelationships": Array [
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
-      "_key": "datadog_account:viragsf@gmail.com|has|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
       "_toEntityKey": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
-      "_key": "datadog_account:viragsf@gmail.com|has|datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
       "_toEntityKey": "datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "_type": "datadog_account_has_role",
+      "displayName": "HAS",
+    },
+    Object {
+      "_class": "HAS",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_toEntityKey": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
@@ -712,7 +732,7 @@ Object {
     "datadog_account_has_role",
   ],
   "numCollectedEntities": 4,
-  "numCollectedRelationships": 2,
+  "numCollectedRelationships": 3,
 }
 `;
 
@@ -760,10 +780,6 @@ Object {
                   },
                   RelationshipToPermissionData {
                     "id": "87b00304-dd12-11e8-9e59-cbeb5f71f72f",
-                    "type": "permissions",
-                  },
-                  RelationshipToPermissionData {
-                    "id": "1a92ede2-6cb2-11e9-99c6-2b3a4a0cdf0a",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -1018,6 +1034,14 @@ Object {
                     "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "020a563c-56a4-11ec-a982-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -1034,12 +1058,358 @@ Object {
       "name": "Datadog Admin Role",
       "userCount": 2,
     },
+    Object {
+      "_class": Array [
+        "AccessRole",
+      ],
+      "_key": "datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": Role {
+            "attributes": RoleAttributes {
+              "createdAt": 2021-11-15T15:06:20.366Z,
+              "modifiedAt": 2021-11-15T15:06:20.366Z,
+              "name": "Datadog Read Only Role",
+              "userCount": 0,
+            },
+            "id": "96bd2d91-4625-11ec-a18c-da7ad0900002",
+            "relationships": RoleResponseRelationships {
+              "permissions": RelationshipToPermissions {
+                "data": Array [
+                  RelationshipToPermissionData {
+                    "id": "5e605652-dd12-11e8-9e53-375565b8970e",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f66600e-dd12-11e8-9e55-7f30fbb45e73",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4441648c-d8b1-11e9-a77a-1b899a04b304",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "1af86ce4-7823-11ea-93dc-d7cad1b1c6cb",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b382b982-8535-11ea-93de-2bf1bdf20798",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7314eb20-aa58-11ea-95e2-6fb6e4a451d5",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "80de1ec0-aa58-11ea-95e2-aff381626d5d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "5025ee24-f923-11ea-adbc-576ea241df8d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "417ba636-2dce-11eb-84c0-6bce5b0d9de0",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "43fa188e-2dce-11eb-84c0-835ad1fd6287",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4916eebe-2dce-11eb-84c0-271cb2c672e8",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "98b984f4-b16d-11eb-a2c6-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "12efc20e-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "97971c1c-e895-11eb-b13c-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7605ef24-f376-11eb-b90b-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7605ef25-f376-11eb-b90b-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
+                ],
+              },
+            },
+            "type": "roles",
+          },
+        },
+      ],
+      "_type": "datadog_role",
+      "createdAt": 1636988780366,
+      "createdOn": undefined,
+      "displayName": "Datadog Read Only Role",
+      "id": "96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "modifiedAt": 1636988780366,
+      "name": "Datadog Read Only Role",
+      "userCount": 0,
+    },
+    Object {
+      "_class": Array [
+        "AccessRole",
+      ],
+      "_key": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": Role {
+            "attributes": RoleAttributes {
+              "createdAt": 2021-11-15T15:06:20.176Z,
+              "modifiedAt": 2021-11-15T15:06:20.176Z,
+              "name": "Datadog Standard Role",
+              "userCount": 1,
+            },
+            "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+            "relationships": RoleResponseRelationships {
+              "permissions": RelationshipToPermissions {
+                "data": Array [
+                  RelationshipToPermissionData {
+                    "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "62cc036c-dd12-11e8-9e54-db9995643092",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f66600e-dd12-11e8-9e55-7f30fbb45e73",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "811ac4ca-dd12-11e8-9e57-676a7f0beef9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "979df720-aed7-11e9-99c6-a7eb8373165a",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "d90f6831-d3d8-11e9-a77a-4fd230ddbc6a",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "d90f6832-d3d8-11e9-a77a-bf8a2607f864",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4441648c-d8b1-11e9-a77a-1b899a04b304",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "48ef71ea-d8b1-11e9-a77a-93f408470ad0",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4d87d5f8-d8b1-11e9-a77a-eb9c8350d04f",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "1af86ce4-7823-11ea-93dc-d7cad1b1c6cb",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b382b982-8535-11ea-93de-2bf1bdf20798",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7314eb20-aa58-11ea-95e2-6fb6e4a451d5",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7b516476-aa58-11ea-95e2-93718cd56369",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "80de1ec0-aa58-11ea-95e2-aff381626d5d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "58b412cc-ff6d-11eb-bc9c-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "9ac1d8cc-e707-11ea-aa2d-73d37e989a9d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "46a301da-ec5c-11ea-aa9f-73bedeab67ee",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "46a301db-ec5c-11ea-aa9f-2fe72193d60e",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "46a301dd-ec5c-11ea-aa9f-97edfb345bc9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "46a301e4-ec5c-11ea-aa9f-87282b3a50cc",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "07c3c146-f7f8-11ea-acf6-0bd62b9ae60e",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "372896c4-f923-11ea-adbc-4fecd107156d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4628ca54-f923-11ea-adbc-4b2b7f88c5e9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4ada6e36-f923-11ea-adbc-0788e5c5e3cf",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "5025ee24-f923-11ea-adbc-576ea241df8d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "55f4b5ec-f923-11ea-adbc-1bfa2334a755",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "5c6b88e2-f923-11ea-adbc-abf57d079420",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "642eebe6-f923-11ea-adbc-eb617674ea04",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6ba32d22-0e1a-11eb-ba44-bf9a5aafaa39",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "fcac2ad8-2843-11eb-8315-0fe47949d625",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "417ba636-2dce-11eb-84c0-6bce5b0d9de0",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "43fa188e-2dce-11eb-84c0-835ad1fd6287",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4916eebe-2dce-11eb-84c0-271cb2c672e8",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "5cbe5f9c-2dce-11eb-84c0-872d3e9f1076",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "61765026-2dce-11eb-84c0-833e230d1b8f",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8106300a-54f7-11eb-8cbc-7781a434a67b",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "98b984f4-b16d-11eb-a2c6-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "12efc20e-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "12efc211-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "12efc20f-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "97971c1c-e895-11eb-b13c-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "97971c1d-e895-11eb-b13c-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7605ef24-f376-11eb-b90b-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7605ef25-f376-11eb-b90b-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "c95412b9-16c7-11ec-85c0-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "26c79920-1703-11ec-85d2-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
+                ],
+              },
+            },
+            "type": "roles",
+          },
+        },
+      ],
+      "_type": "datadog_role",
+      "createdAt": 1636988780176,
+      "createdOn": undefined,
+      "displayName": "Datadog Standard Role",
+      "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "modifiedAt": 1636988780176,
+      "name": "Datadog Standard Role",
+      "userCount": 1,
+    },
   ],
   "collectedRelationships": Array [],
   "encounteredTypes": Array [
     "datadog_role",
   ],
-  "numCollectedEntities": 1,
+  "numCollectedEntities": 3,
   "numCollectedRelationships": 0,
 }
 `;
