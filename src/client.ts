@@ -26,7 +26,7 @@ export class APIClient {
   private async iterateApi<T, K>(
     client: K,
     fnName: string,
-    callback: (result: T[]) => void,
+    callback: (result: T[]) => Promise<void>,
     opts?: any,
   ) {
     let pageNumber = 0,
@@ -58,7 +58,7 @@ export class APIClient {
         );
 
         if (res.data) {
-          callback(res.data);
+          await callback(res.data);
         }
 
         totalCount = res.meta?.page?.totalCount || 0;

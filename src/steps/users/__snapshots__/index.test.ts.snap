@@ -7,31 +7,31 @@ Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_account:viragsf@gmail.com",
+      "_key": "datadog_account:stefan@creativice.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
-            "accessRole": "adm",
+            "accessRole": "st",
             "disabled": false,
-            "email": "viragsf@gmail.com",
-            "handle": "viragsf@gmail.com",
-            "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+            "email": "stefan@creativice.com",
+            "handle": "stefan@creativice.com",
+            "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
             "name": null,
             "verified": true,
           },
         },
       ],
       "_type": "datadog_account",
-      "accessRole": "adm",
+      "accessRole": "st",
       "createdOn": undefined,
       "disabled": false,
-      "displayName": "viragsf@gmail.com",
-      "email": "viragsf@gmail.com",
-      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-      "id": "viragsf@gmail.com",
-      "name": "viragsf@gmail.com",
-      "username": "viragsf@gmail.com",
+      "displayName": "stefan@creativice.com",
+      "email": "stefan@creativice.com",
+      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+      "id": "stefan@creativice.com",
+      "name": "stefan@creativice.com",
+      "username": "stefan@creativice.com",
       "verified": true,
     },
     Object {
@@ -88,6 +88,62 @@ Object {
       "id": "development@jupiterone.dev",
       "name": "JupiterOne Development",
       "username": "development@jupiterone.dev",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:stefan@creativice.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2021-12-28T13:48:08.440Z,
+              "disabled": false,
+              "email": "stefan@creativice.com",
+              "handle": "stefan@creativice.com",
+              "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+              "modifiedAt": 2021-12-28T13:50:45.873Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "ca36998a-67e4-11ec-b129-da7ad0900002",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "stefan@creativice.com",
+      "email": "stefan@creativice.com",
+      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+      "id": "stefan@creativice.com",
+      "name": "stefan@creativice.com",
+      "username": "stefan@creativice.com",
       "verified": true,
     },
     Object {
@@ -150,16 +206,24 @@ Object {
   "collectedRelationships": Array [
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
-      "_key": "datadog_account:viragsf@gmail.com|has|datadog_user:development@jupiterone.dev",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_user:development@jupiterone.dev",
       "_toEntityKey": "datadog_user:development@jupiterone.dev",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:viragsf@gmail.com",
-      "_key": "datadog_account:viragsf@gmail.com|has|datadog_user:viragsf@gmail.com",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_user:stefan@creativice.com",
+      "_toEntityKey": "datadog_user:stefan@creativice.com",
+      "_type": "datadog_account_has_user",
+      "displayName": "HAS",
+    },
+    Object {
+      "_class": "HAS",
+      "_fromEntityKey": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:stefan@creativice.com|has|datadog_user:viragsf@gmail.com",
       "_toEntityKey": "datadog_user:viragsf@gmail.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
@@ -170,8 +234,8 @@ Object {
     "datadog_user",
     "datadog_account_has_user",
   ],
-  "numCollectedEntities": 3,
-  "numCollectedRelationships": 2,
+  "numCollectedEntities": 4,
+  "numCollectedRelationships": 3,
 }
 `;
 
@@ -232,6 +296,62 @@ Object {
       "id": "development@jupiterone.dev",
       "name": "JupiterOne Development",
       "username": "development@jupiterone.dev",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:stefan@creativice.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2021-12-28T13:48:08.440Z,
+              "disabled": false,
+              "email": "stefan@creativice.com",
+              "handle": "stefan@creativice.com",
+              "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+              "modifiedAt": 2021-12-28T13:50:45.873Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "ca36998a-67e4-11ec-b129-da7ad0900002",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "stefan@creativice.com",
+      "email": "stefan@creativice.com",
+      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
+      "id": "stefan@creativice.com",
+      "name": "stefan@creativice.com",
+      "username": "stefan@creativice.com",
       "verified": true,
     },
     Object {
@@ -331,10 +451,6 @@ Object {
                   },
                   RelationshipToPermissionData {
                     "id": "87b00304-dd12-11e8-9e59-cbeb5f71f72f",
-                    "type": "permissions",
-                  },
-                  RelationshipToPermissionData {
-                    "id": "1a92ede2-6cb2-11e9-99c6-2b3a4a0cdf0a",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -589,6 +705,14 @@ Object {
                     "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "020a563c-56a4-11ec-a982-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -696,6 +820,10 @@ Object {
                     "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -725,7 +853,7 @@ Object {
               "createdAt": 2021-11-15T15:06:20.176Z,
               "modifiedAt": 2021-11-15T15:06:20.176Z,
               "name": "Datadog Standard Role",
-              "userCount": 0,
+              "userCount": 1,
             },
             "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
             "relationships": RoleResponseRelationships {
@@ -927,6 +1055,10 @@ Object {
                     "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                     "type": "permissions",
                   },
+                  RelationshipToPermissionData {
+                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "type": "permissions",
+                  },
                 ],
               },
             },
@@ -941,7 +1073,7 @@ Object {
       "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
       "modifiedAt": 1636988780176,
       "name": "Datadog Standard Role",
-      "userCount": 0,
+      "userCount": 1,
     },
   ],
   "collectedRelationships": Array [
@@ -953,14 +1085,30 @@ Object {
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
+    Object {
+      "_class": "ASSIGNED",
+      "_fromEntityKey": "datadog_user:viragsf@gmail.com",
+      "_key": "datadog_user:viragsf@gmail.com|assigned|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_toEntityKey": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_type": "datadog_user_assigned_role",
+      "displayName": "ASSIGNED",
+    },
+    Object {
+      "_class": "ASSIGNED",
+      "_fromEntityKey": "datadog_user:stefan@creativice.com",
+      "_key": "datadog_user:stefan@creativice.com|assigned|datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_toEntityKey": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_type": "datadog_user_assigned_role",
+      "displayName": "ASSIGNED",
+    },
   ],
   "encounteredTypes": Array [
     "datadog_user",
     "datadog_role",
     "datadog_user_assigned_role",
   ],
-  "numCollectedEntities": 5,
-  "numCollectedRelationships": 1,
+  "numCollectedEntities": 6,
+  "numCollectedRelationships": 3,
 }
 `;
 
@@ -1023,12 +1171,68 @@ Object {
       "username": "development@jupiterone.dev",
       "verified": true,
     },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:viragsf@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2021-11-16T18:25:08.049Z,
+              "disabled": false,
+              "email": "viragsf@gmail.com",
+              "handle": "viragsf@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+              "modifiedAt": 2021-11-16T18:27:43.851Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "createdOn": undefined,
+      "disabled": false,
+      "displayName": "viragsf@gmail.com",
+      "email": "viragsf@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
+      "id": "viragsf@gmail.com",
+      "name": "viragsf@gmail.com",
+      "username": "viragsf@gmail.com",
+      "verified": true,
+    },
   ],
   "collectedRelationships": Array [],
   "encounteredTypes": Array [
     "datadog_user",
   ],
-  "numCollectedEntities": 1,
+  "numCollectedEntities": 2,
   "numCollectedRelationships": 0,
 }
 `;

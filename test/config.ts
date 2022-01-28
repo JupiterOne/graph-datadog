@@ -9,7 +9,7 @@ if (process.env.LOAD_ENV) {
 }
 const DEFAULT_API_KEY = 'dummy-api-key';
 const DEFAULT_APP_KEY = 'dummy-app-key';
-const DEFAULT_EMAIL = 'viragsf@gmail.com';
+const DEFAULT_EMAIL = 'stefan@creativice.com';
 
 export const integrationConfig: IntegrationConfig = {
   datadogApiKey: process.env.DATADOG_API_KEY || DEFAULT_API_KEY,
