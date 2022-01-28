@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-01-28
+
+### Fixed
+- Use `await` for `iterateApi` callback function to properly create all the user roles relationships
+
 ## [1.0.0] - 2022-01-14
 
 ### Added
