@@ -30,18 +30,12 @@ export async function fetchRoles({
 
 export async function buildAccountRoleRelationships({
   jobState,
-  logger,
 }: IntegrationStepExecutionContext<IntegrationConfig>) {
   const accountEntity = (await jobState.getData(
     ACCOUNT_ENTITY_DATA_KEY,
   )) as Entity;
 
   if (!accountEntity) {
-    logger.publishEvent({
-      name: 'missing_account_entity',
-      description:
-        'Could not find account entity: please ensure that entered email address is correct.',
-    });
     return;
   }
 
