@@ -35,6 +35,10 @@ export async function buildAccountRoleRelationships({
     ACCOUNT_ENTITY_DATA_KEY,
   )) as Entity;
 
+  if (!accountEntity) {
+    return;
+  }
+
   await jobState.iterateEntities(
     { _type: Entities.ROLE._type },
     async (roleEntity) => {
