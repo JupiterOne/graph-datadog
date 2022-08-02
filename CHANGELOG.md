@@ -8,10 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added optional host config field. The Datadog US host is `datadoghq.us` and
+  the EU host is `datadoghq.eu`
+
 ## [1.0.1] - 2022-01-28
 
 ### Fixed
-- Use `await` for `iterateApi` callback function to properly create all the user roles relationships
+
+- Use `await` for `iterateApi` callback function to properly create all the user
+  roles relationships
 
 ## [1.0.0] - 2022-01-14
 

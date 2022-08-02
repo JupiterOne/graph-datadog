@@ -4,22 +4,26 @@ import {
 } from '@jupiterone/integration-sdk-core';
 import { User } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/User';
 import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/Role';
-import { v1, v2 } from '@datadog/datadog-api-client';
+import { client, v1, v2 } from '@datadog/datadog-api-client';
 import { retry } from '@lifeomic/attempt';
 
 import { IntegrationConfig } from './config';
 export type ResourceIteratee<T> = (each: T) => Promise<void> | void;
 
 export class APIClient {
-  private configuration: v2.Configuration;
+  private configuration: client.Configuration;
   private readonly pageSize = 100;
 
   constructor(readonly config: IntegrationConfig) {
-    this.configuration = v2.createConfiguration({
+    this.configuration = client.createConfiguration({
       authMethods: {
         apiKeyAuth: config.datadogApiKey,
         appKeyAuth: config.datadogAppKey,
       },
+    });
+
+    client.setServerVariables(this.configuration, {
+      site: config.datadogHost ? config.datadogHost : 'datadoghq.com',
     });
   }
 
@@ -75,13 +79,7 @@ export class APIClient {
   }
 
   public async verifyAuthentication(): Promise<void> {
-    const configuration = v1.createConfiguration({
-      authMethods: {
-        apiKeyAuth: this.config.datadogApiKey,
-        appKeyAuth: this.config.datadogAppKey,
-      },
-    });
-    const apiInstance = new v1.AuthenticationApi(configuration);
+    const apiInstance = new v1.AuthenticationApi(this.configuration);
     try {
       const res = await apiInstance.validate();
       if (!res.valid) {
@@ -125,13 +123,8 @@ export class APIClient {
     // considering they won't know the id unless they run the integration
     // or dig deeper into Datadog. This only "problematic" if we want to
     // have this Entity as a root entity (e.g. usually account entity)
-    const configuration = v1.createConfiguration({
-      authMethods: {
-        apiKeyAuth: this.config.datadogApiKey,
-        appKeyAuth: this.config.datadogAppKey,
-      },
-    });
-    const apiInstance = new v1.UsersApi(configuration);
+    const apiInstance = new v1.UsersApi(this.configuration);
+
     const account = await apiInstance.getUser({
       userHandle: this.config.datadogAccountEmail,
     });
