@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 1.1.0 - 2022-08-03
+
 ### Added
 
 - Added optional host config field. The Datadog US host is `datadoghq.us` and
