@@ -3,32 +3,80 @@
 exports[`#createAccountEntity should convert to entity 1`] = `
 Object {
   "_class": Array [
-    "User",
+    "Account",
   ],
-  "_key": "datadog_account:viragsf@gmail.com",
+  "_key": "datadog_account:local-integration",
   "_rawData": Array [
     Object {
       "name": "default",
       "rawData": Object {
-        "accessRole": "adm",
-        "disabled": false,
-        "email": "viragsf@gmail.com",
-        "handle": "viragsf@gmail.com",
-        "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-        "verified": true,
+        "name": "Local Integration",
       },
     },
   ],
   "_type": "datadog_account",
-  "accessRole": "adm",
   "createdOn": undefined,
-  "disabled": false,
-  "displayName": "viragsf@gmail.com",
-  "email": "viragsf@gmail.com",
-  "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-  "id": "viragsf@gmail.com",
-  "name": "viragsf@gmail.com",
-  "username": "viragsf@gmail.com",
-  "verified": true,
+  "displayName": "Local Integration",
+  "name": "Local Integration",
+}
+`;
+
+exports[`#createOrganizationAccountEntity should convert to entity 1`] = `
+Object {
+  "_class": Array [
+    "Account",
+  ],
+  "_key": "datadog_account:96bd2d8e-4625-11ec-a18c-da7ad0900002",
+  "_rawData": Array [
+    Object {
+      "name": "default",
+      "rawData": Object {
+        "billing": Object {
+          "type": "cc",
+        },
+        "name": "JupiterOne Inc.",
+        "publicId": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+        "settings": Object {
+          "privateWidgetShare": false,
+          "saml": Object {
+            "enabled": false,
+          },
+          "samlAutocreateAccessRole": "st",
+          "samlAutocreateUsersDomains": Object {
+            "domains": Array [],
+            "enabled": false,
+          },
+          "samlCanBeEnabled": false,
+          "samlIdpInitiatedLogin": Object {
+            "enabled": false,
+          },
+          "samlIdpMetadataUploaded": false,
+          "samlStrictMode": Object {
+            "enabled": false,
+          },
+        },
+        "subscription": Object {
+          "type": "pro",
+        },
+      },
+    },
+  ],
+  "_type": "datadog_account",
+  "billingType": "cc",
+  "createdOn": undefined,
+  "description": "",
+  "displayName": "JupiterOne Inc.",
+  "name": "JupiterOne Inc.",
+  "settings.privateWidgetShare": false,
+  "settings.samlAutocreateAccessRole": "st",
+  "settings.samlAutocreateUsersDomainsEnabled": false,
+  "settings.samlCanBeEnabled": false,
+  "settings.samlEnabled": false,
+  "settings.samlIdpEndpoint": undefined,
+  "settings.samlIdpInitiatedLoginEnabled": false,
+  "settings.samlIdpMetadataUploaded": false,
+  "settings.samlLoginUrl": undefined,
+  "settings.samlStrictModeEnabled": false,
+  "subscriptionType": "pro",
 }
 `;

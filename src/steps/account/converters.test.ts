@@ -1,8 +1,17 @@
 import { getMockAccount } from '../../../test/mocks';
-import { createAccountEntity } from './converters';
+import {
+  createAccountEntity,
+  createOrganizationAccountEntity,
+} from './converters';
 
 describe('#createAccountEntity', () => {
   test('should convert to entity', () => {
-    expect(createAccountEntity(getMockAccount())).toMatchSnapshot();
+    expect(createAccountEntity('Local Integration')).toMatchSnapshot();
+  });
+});
+
+describe('#createOrganizationAccountEntity', () => {
+  test('should convert to entity', () => {
+    expect(createOrganizationAccountEntity(getMockAccount())).toMatchSnapshot();
   });
 });

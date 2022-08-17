@@ -5,34 +5,21 @@ Object {
   "collectedEntities": Array [
     Object {
       "_class": Array [
-        "User",
+        "Account",
       ],
-      "_key": "datadog_account:stefan@creativice.com",
+      "_key": "datadog_account:local-integration",
       "_rawData": Array [
         Object {
           "name": "default",
-          "rawData": User {
-            "accessRole": "st",
-            "disabled": false,
-            "email": "stefan@creativice.com",
-            "handle": "stefan@creativice.com",
-            "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-            "name": null,
-            "verified": true,
+          "rawData": Object {
+            "name": "Local Integration",
           },
         },
       ],
       "_type": "datadog_account",
-      "accessRole": "st",
       "createdOn": undefined,
-      "disabled": false,
-      "displayName": "stefan@creativice.com",
-      "email": "stefan@creativice.com",
-      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-      "id": "stefan@creativice.com",
-      "name": "stefan@creativice.com",
-      "username": "stefan@creativice.com",
-      "verified": true,
+      "displayName": "Local Integration",
+      "name": "Local Integration",
     },
     Object {
       "_class": Array [
@@ -703,24 +690,24 @@ Object {
   "collectedRelationships": Array [
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:stefan@creativice.com",
-      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_account:local-integration",
+      "_key": "datadog_account:local-integration|has|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
       "_toEntityKey": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:stefan@creativice.com",
-      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_account:local-integration",
+      "_key": "datadog_account:local-integration|has|datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
       "_toEntityKey": "datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
-      "_fromEntityKey": "datadog_account:stefan@creativice.com",
-      "_key": "datadog_account:stefan@creativice.com|has|datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_account:local-integration",
+      "_key": "datadog_account:local-integration|has|datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
       "_toEntityKey": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
       "_type": "datadog_account_has_role",
       "displayName": "HAS",

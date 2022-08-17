@@ -86,7 +86,7 @@ The following entities are created:
 
 | Resources | Entity `_type`    | Entity `_class` |
 | --------- | ----------------- | --------------- |
-| Account   | `datadog_account` | `User`          |
+| Account   | `datadog_account` | `Account`       |
 | Role      | `datadog_role`    | `AccessRole`    |
 | User      | `datadog_user`    | `User`          |
 
