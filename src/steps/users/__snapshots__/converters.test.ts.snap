@@ -43,6 +43,7 @@ Object {
     },
   ],
   "_type": "datadog_user",
+  "active": true,
   "createdOn": undefined,
   "disabled": false,
   "displayName": "viragsf@gmail.com",

@@ -24,6 +24,7 @@ export function createUserEntity(user: User): Entity | null {
         name: user.attributes?.name || user.attributes?.email,
         verified: user.attributes?.verified,
         disabled: user.attributes?.disabled,
+        active: !user.attributes?.disabled,
         icon: user.attributes?.icon,
         displayName: user.attributes?.name || user.attributes?.email,
       },

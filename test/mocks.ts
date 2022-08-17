@@ -1,15 +1,36 @@
-import { User } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/User';
 import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/Role';
 import { User as User_v2 } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/User';
+import { Organization } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1';
 
-export function getMockAccount(): Partial<User> {
+export function getMockAccount(): Partial<Organization> {
   return {
-    accessRole: 'adm',
-    disabled: false,
-    email: 'viragsf@gmail.com',
-    handle: 'viragsf@gmail.com',
-    icon: 'https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro',
-    verified: true,
+    billing: {
+      type: 'cc',
+    },
+    name: 'JupiterOne Inc.',
+    publicId: '96bd2d8e-4625-11ec-a18c-da7ad0900002',
+    settings: {
+      privateWidgetShare: false,
+      saml: {
+        enabled: false,
+      },
+      samlAutocreateAccessRole: 'st',
+      samlAutocreateUsersDomains: {
+        domains: [],
+        enabled: false,
+      },
+      samlCanBeEnabled: false,
+      samlIdpInitiatedLogin: {
+        enabled: false,
+      },
+      samlIdpMetadataUploaded: false,
+      samlStrictMode: {
+        enabled: false,
+      },
+    },
+    subscription: {
+      type: 'pro',
+    },
   };
 }
 

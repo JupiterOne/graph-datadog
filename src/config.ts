@@ -35,6 +35,9 @@ export const instanceConfigFields: IntegrationInstanceConfigFieldMap = {
   datadogHost: {
     type: 'string',
   },
+  datadogOrgPublicId: {
+    type: 'string',
+  },
 };
 
 /**
@@ -46,6 +49,7 @@ export interface IntegrationConfig extends IntegrationInstanceConfig {
   datadogAppKey: string;
   datadogAccountEmail: string;
   datadogHost?: string;
+  datadogOrgPublicId?: string;
 }
 
 export async function validateInvocation(

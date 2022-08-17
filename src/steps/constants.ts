@@ -25,7 +25,7 @@ export const Entities: Record<'USER' | 'ACCOUNT' | 'ROLE', StepEntityMetadata> =
     ACCOUNT: {
       resourceName: 'Account',
       _type: 'datadog_account',
-      _class: ['User'],
+      _class: ['Account'],
     },
     ROLE: {
       resourceName: 'Role',

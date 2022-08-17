@@ -172,6 +172,16 @@ export class APIClient {
       { roleId },
     );
   }
+
+  public async fetchOrganization(
+    publicId: string,
+  ): Promise<v1.OrganizationResponse> {
+    const apiInstance = new v1.OrganizationsApi(this.configuration);
+
+    return apiInstance.getOrg({
+      publicId,
+    });
+  }
 }
 
 export function createAPIClient(config: IntegrationConfig): APIClient {

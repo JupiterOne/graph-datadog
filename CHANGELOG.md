@@ -8,6 +8,19 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added optional environment field `DATADOG_ORG_PUBLIC_ID` allowing users to
+  enter their organization's public ID resulting in integration being able to
+  fetch details about it. If not provided, a default `Account` entity will be
+  created instead.
+
+### Changed
+
+- Bumped `@jupiterone/integration-sdk-core` to `^8.22.0`
+- Bumped `@jupiterone/integration-sdk-dev-tools` to `^8.22.0`
+- Bumped `@jupiterone/integration-sdk-testing` to `^8.22.0`
+
 ## 1.1.0 - 2022-08-03
 
 ### Added
