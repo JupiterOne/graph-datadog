@@ -8,6 +8,21 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Updated `iterateApi` to handle both V1 and V2 of Datadog API Client
+- The following entities are **now** created:
+
+| Resources | Entity `_type` | Entity `_class` |
+| --------- | -------------- | --------------- |
+| Host      | `datadog_host` | `Host`          |
+
+- The following relationships are **now** created:
+
+| Source Entity `_type` | Relationship `_class` | Target Entity `_type` |
+| --------------------- | --------------------- | --------------------- |
+| `datadog_account`     | **HAS**               | `datadog_host`        |
+
 ## 2.0.0 - 2022-08-17
 
 ### Added
