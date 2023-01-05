@@ -2,14 +2,14 @@
 
 ## Datadog + JupiterOne Integration Benefits
 
-- Visualize Datadog services, teams, and users in the JupiterOne graph.
+- Visualize Datadog services, hosts, teams, and users in the JupiterOne graph.
 - Map Datadog users to employees in your JupiterOne account.
 - Monitor changes to Datadog users using JupiterOne alerts.
 
 ## How it Works
 
-- JupiterOne periodically fetches services, teams, and users from Datadog to
-  update the graph.
+- JupiterOne periodically fetches services, hosts, teams, and users from Datadog
+  to update the graph.
 - Write JupiterOne queries to review and monitor updates to the graph, or
   leverage existing queries.
 - Configure alerts to take action when JupiterOne graph changes, or leverage
@@ -87,6 +87,7 @@ The following entities are created:
 | Resources | Entity `_type`    | Entity `_class` |
 | --------- | ----------------- | --------------- |
 | Account   | `datadog_account` | `Account`       |
+| Host      | `datadog_host`    | `Host`          |
 | Role      | `datadog_role`    | `AccessRole`    |
 | User      | `datadog_user`    | `User`          |
 
@@ -96,6 +97,7 @@ The following relationships are created:
 
 | Source Entity `_type` | Relationship `_class` | Target Entity `_type` |
 | --------------------- | --------------------- | --------------------- |
+| `datadog_account`     | **HAS**               | `datadog_host`        |
 | `datadog_account`     | **HAS**               | `datadog_role`        |
 | `datadog_account`     | **HAS**               | `datadog_user`        |
 | `datadog_user`        | **ASSIGNED**          | `datadog_role`        |

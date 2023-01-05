@@ -4,10 +4,12 @@ import {
 } from '@jupiterone/integration-sdk-core';
 import { User } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/User';
 import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/Role';
+import { Host } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/Host';
 import { client, v1, v2 } from '@datadog/datadog-api-client';
 import { retry } from '@lifeomic/attempt';
 
 import { IntegrationConfig } from './config';
+
 export type ResourceIteratee<T> = (each: T) => Promise<void> | void;
 
 export class APIClient {
@@ -30,6 +32,7 @@ export class APIClient {
   private async iterateApi<T, K>(
     client: K,
     fnName: string,
+    responseDataProperty: string,
     callback: (result: T[]) => Promise<void>,
     opts?: any,
   ) {
@@ -61,8 +64,8 @@ export class APIClient {
           },
         );
 
-        if (res.data) {
-          await callback(res.data);
+        if (res[responseDataProperty]) {
+          await callback(res[responseDataProperty]);
         }
 
         totalCount = res.meta?.page?.totalCount || 0;
@@ -106,6 +109,7 @@ export class APIClient {
     await this.iterateApi<User, v2.UsersApi>(
       apiInstance,
       'listUsers',
+      'data',
       async (users) => {
         for (const user of users) {
           await iteratee(user);
@@ -123,6 +127,7 @@ export class APIClient {
     // considering they won't know the id unless they run the integration
     // or dig deeper into Datadog. This only "problematic" if we want to
     // have this Entity as a root entity (e.g. usually account entity)
+
     const apiInstance = new v1.UsersApi(this.configuration);
 
     const account = await apiInstance.getUser({
@@ -142,6 +147,7 @@ export class APIClient {
     await this.iterateApi<Role, v2.RolesApi>(
       apiInstance,
       'listRoles',
+      'data',
       async (roles) => {
         for (const role of roles) {
           await iteratee(role);
@@ -164,6 +170,7 @@ export class APIClient {
     await this.iterateApi<User, v2.RolesApi>(
       apiInstance,
       'listRoleUsers',
+      'data',
       async (users) => {
         for (const user of users) {
           await iteratee(user);
@@ -181,6 +188,21 @@ export class APIClient {
     return apiInstance.getOrg({
       publicId,
     });
+  }
+
+  public async iterateHosts(iteratee: ResourceIteratee<Host>): Promise<void> {
+    const apiInstance = new v1.HostsApi(this.configuration);
+
+    await this.iterateApi<Host, v1.HostsApi>(
+      apiInstance,
+      'listHosts',
+      'hostList',
+      async (hosts) => {
+        for (const host of hosts) {
+          await iteratee(host);
+        }
+      },
+    );
   }
 }
 

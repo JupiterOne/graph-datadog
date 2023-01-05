@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#createHostEntity should convert to entity 1`] = `
+Object {
+  "_class": Array [
+    "Host",
+  ],
+  "_key": "datadog_host:9231106664",
+  "_rawData": Array [
+    Object {
+      "name": "default",
+      "rawData": Object {
+        "aliases": Array [
+          "mindfield",
+        ],
+        "apps": Array [
+          "agent",
+          "container",
+          "docker",
+          "ntp",
+        ],
+        "hostName": "mindfield",
+        "id": 9231106664,
+        "isMuted": false,
+        "lastReportedTime": 1670945215,
+        "meta": Object {
+          "agentVersion": "7.40.1",
+          "cpuCores": 1,
+          "fbsdV": Array [
+            "",
+            "",
+            "",
+          ],
+          "gohai": "{\\"cpu\\":{\\"cache_size\\":\\"512 KB\\",\\"cpu_cores\\":\\"8\\",\\"cpu_logical_processors\\":\\"16\\",\\"family\\":\\"23\\",\\"mhz\\":\\"2200.000\\",\\"model\\":\\"8\\",\\"model_name\\":\\"AMD Ryzen 7 2700X Eight-Core Processor\\",\\"stepping\\":\\"2\\",\\"vendor_id\\":\\"AuthenticAMD\\"},\\"filesystem\\":[{\\"kb_size\\":\\"950914724\\",\\"mounted_on\\":\\"/\\",\\"name\\":\\"overlay\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev/shm\\",\\"name\\":\\"shm\\"},{\\"kb_size\\":\\"950914724\\",\\"mounted_on\\":\\"/etc/hosts\\",\\"name\\":\\"/dev/nvme1n1p2\\"},{\\"kb_size\\":\\"1630628\\",\\"mounted_on\\":\\"/var/run/docker.sock\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"8153124\\",\\"mounted_on\\":\\"/proc/asound\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"8153124\\",\\"mounted_on\\":\\"/proc/acpi\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"8153124\\",\\"mounted_on\\":\\"/proc/scsi\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"8153124\\",\\"mounted_on\\":\\"/sys/firmware\\",\\"name\\":\\"tmpfs\\"}],\\"memory\\":{\\"swap_total\\":\\"9229308kB\\",\\"total\\":\\"16306252kB\\"},\\"network\\":null,\\"platform\\":{\\"GOOARCH\\":\\"amd64\\",\\"GOOS\\":\\"linux\\",\\"goV\\":\\"1.18.8\\",\\"hardware_platform\\":\\"x86_64\\",\\"hostname\\":\\"f992d058a188\\",\\"kernel_name\\":\\"Linux\\",\\"kernel_release\\":\\"5.15.0-56-generic\\",\\"kernel_version\\":\\"#62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022\\",\\"machine\\":\\"x86_64\\",\\"os\\":\\"GNU/Linux\\",\\"processor\\":\\"x86_64\\",\\"pythonV\\":\\"3.8.14\\"}}",
+          "installMethod": Object {
+            "installerVersion": "docker",
+            "tool": "docker",
+            "toolVersion": "docker",
+          },
+          "macV": Array [
+            "",
+            "",
+            "",
+          ],
+          "machine": "amd64",
+          "nixV": Array [
+            "ubuntu",
+            "22.04",
+            "",
+          ],
+          "platform": "linux",
+          "processor": "AMD Ryzen 7 2700X Eight-Core Processor",
+          "pythonV": "3.8.14",
+          "socketFqdn": "f992d058a188",
+          "socketHostname": "f992d058a188",
+          "winV": Array [
+            "",
+            "",
+            "",
+          ],
+        },
+        "metrics": Object {
+          "cpu": 6.804911,
+          "iowait": 0.00046491018,
+          "load": 0.093782894,
+        },
+        "muteTimeout": undefined,
+        "name": "mindfield",
+        "sources": Array [
+          "agent",
+        ],
+        "tagsBySource": Object {
+          "Datadog": Array [
+            "host:mindfield",
+          ],
+        },
+        "up": true,
+      },
+    },
+  ],
+  "_type": "datadog_host",
+  "agentVersion": "7.40.1",
+  "aliases": Array [
+    "mindfield",
+  ],
+  "apps": Array [
+    "agent",
+    "container",
+    "docker",
+    "ntp",
+  ],
+  "awsName": undefined,
+  "createdOn": undefined,
+  "displayName": "mindfield",
+  "hostCpuCores": 1,
+  "hostname": "mindfield",
+  "id": "9231106664",
+  "isMuted": false,
+  "machine": "amd64",
+  "name": "mindfield",
+  "osName": "ubuntu",
+  "osVersion": "22.04",
+  "platform": "linux",
+  "processor": "AMD Ryzen 7 2700X Eight-Core Processor",
+  "pythonVersion": "3.8.14",
+  "reportedOn": 1670945215,
+  "socketFqdn": "f992d058a188",
+  "socketHostname": "f992d058a188",
+  "sources": Array [
+    "agent",
+  ],
+  "state": "running",
+}
+`;
