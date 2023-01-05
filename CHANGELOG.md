@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.1.0 - 2023-01-05
+
 ### Added
 
 - Updated `iterateApi` to handle both V1 and V2 of Datadog API Client
