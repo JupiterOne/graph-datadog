@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added more details to the error (including the `err` object as `cause`) which
+  helps when `err` doesn't contain `code` or `body` property.
+
 ## 2.1.0 - 2023-01-05
 
 ### Added
