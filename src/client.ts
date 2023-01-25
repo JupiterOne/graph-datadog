@@ -76,6 +76,7 @@ export class APIClient {
           endpoint: fnName,
           status: err.code,
           statusText: err.body,
+          cause: err,
         });
       }
     } while (totalCount > processed);
