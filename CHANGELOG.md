@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.1.1 - 2023-01-25
+
 ### Added
 
 - Added more details to the error (including the `err` object as `cause`) which
