@@ -1,9 +1,6 @@
 import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/Role';
 import { User as User_v2 } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v2/models/User';
-import {
-  Host,
-  Organization,
-} from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1';
+import { Organization } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1';
 
 export function getMockAccount(): Partial<Organization> {
   return {
@@ -98,72 +95,46 @@ export function getMockUser(): Partial<User_v2> {
   };
 }
 
-export function getMockHost(): Partial<Host> {
+export function getMockHost() {
   return {
-    aliases: [
-      "mindfield"
-    ],
-    apps: [
-      "agent",
-      "container",
-      "docker",
-      "ntp"
-    ],
-    hostName: "mindfield",
+    aliases: ['mindfield'],
+    apps: ['agent', 'container', 'docker', 'ntp'],
+    host_name: 'mindfield',
     id: 9231106664,
-    isMuted: false,
-    lastReportedTime: 1670945215,
+    is_muted: false,
+    last_reported_time: 1670945215,
     meta: {
-      agentVersion: "7.40.1",
+      agent_version: '7.40.1',
       cpuCores: 1,
-      fbsdV: [
-        "",
-        "",
-        ""
-      ],
-      gohai: "{\"cpu\":{\"cache_size\":\"512 KB\",\"cpu_cores\":\"8\",\"cpu_logical_processors\":\"16\",\"family\":\"23\",\"mhz\":\"2200.000\",\"model\":\"8\",\"model_name\":\"AMD Ryzen 7 2700X Eight-Core Processor\",\"stepping\":\"2\",\"vendor_id\":\"AuthenticAMD\"},\"filesystem\":[{\"kb_size\":\"950914724\",\"mounted_on\":\"/\",\"name\":\"overlay\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev/shm\",\"name\":\"shm\"},{\"kb_size\":\"950914724\",\"mounted_on\":\"/etc/hosts\",\"name\":\"/dev/nvme1n1p2\"},{\"kb_size\":\"1630628\",\"mounted_on\":\"/var/run/docker.sock\",\"name\":\"tmpfs\"},{\"kb_size\":\"8153124\",\"mounted_on\":\"/proc/asound\",\"name\":\"tmpfs\"},{\"kb_size\":\"8153124\",\"mounted_on\":\"/proc/acpi\",\"name\":\"tmpfs\"},{\"kb_size\":\"8153124\",\"mounted_on\":\"/proc/scsi\",\"name\":\"tmpfs\"},{\"kb_size\":\"8153124\",\"mounted_on\":\"/sys/firmware\",\"name\":\"tmpfs\"}],\"memory\":{\"swap_total\":\"9229308kB\",\"total\":\"16306252kB\"},\"network\":null,\"platform\":{\"GOOARCH\":\"amd64\",\"GOOS\":\"linux\",\"goV\":\"1.18.8\",\"hardware_platform\":\"x86_64\",\"hostname\":\"f992d058a188\",\"kernel_name\":\"Linux\",\"kernel_release\":\"5.15.0-56-generic\",\"kernel_version\":\"#62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022\",\"machine\":\"x86_64\",\"os\":\"GNU/Linux\",\"processor\":\"x86_64\",\"pythonV\":\"3.8.14\"}}",
+      fbsdV: ['', '', ''],
+      gohai:
+        '{"cpu":{"cache_size":"512 KB","cpu_cores":"8","cpu_logical_processors":"16","family":"23","mhz":"2200.000","model":"8","model_name":"AMD Ryzen 7 2700X Eight-Core Processor","stepping":"2","vendor_id":"AuthenticAMD"},"filesystem":[{"kb_size":"950914724","mounted_on":"/","name":"overlay"},{"kb_size":"65536","mounted_on":"/dev","name":"tmpfs"},{"kb_size":"65536","mounted_on":"/dev/shm","name":"shm"},{"kb_size":"950914724","mounted_on":"/etc/hosts","name":"/dev/nvme1n1p2"},{"kb_size":"1630628","mounted_on":"/var/run/docker.sock","name":"tmpfs"},{"kb_size":"8153124","mounted_on":"/proc/asound","name":"tmpfs"},{"kb_size":"8153124","mounted_on":"/proc/acpi","name":"tmpfs"},{"kb_size":"8153124","mounted_on":"/proc/scsi","name":"tmpfs"},{"kb_size":"8153124","mounted_on":"/sys/firmware","name":"tmpfs"}],"memory":{"swap_total":"9229308kB","total":"16306252kB"},"network":null,"platform":{"GOOARCH":"amd64","GOOS":"linux","goV":"1.18.8","hardware_platform":"x86_64","hostname":"f992d058a188","kernel_name":"Linux","kernel_release":"5.15.0-56-generic","kernel_version":"#62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022","machine":"x86_64","os":"GNU/Linux","processor":"x86_64","pythonV":"3.8.14"}}',
       installMethod: {
-        installerVersion: "docker",
-        tool: "docker",
-        toolVersion: "docker"
+        installerVersion: 'docker',
+        tool: 'docker',
+        toolVersion: 'docker',
       },
-      macV: [
-        "",
-        "",
-        ""
-      ],
-      machine: "amd64",
-      nixV: [
-        "ubuntu",
-        "22.04",
-        ""
-      ],
-      platform: "linux",
-      processor: "AMD Ryzen 7 2700X Eight-Core Processor",
-      pythonV: "3.8.14",
-      socketFqdn: "f992d058a188",
-      socketHostname: "f992d058a188",
-      winV: [
-        "",
-        "",
-        ""
-      ]
+      macV: ['', '', ''],
+      machine: 'amd64',
+      nixV: ['ubuntu', '22.04', ''],
+      platform: 'linux',
+      processor: 'AMD Ryzen 7 2700X Eight-Core Processor',
+      pythonV: '3.8.14',
+      'socket-fqdn': 'f992d058a188',
+      'socket-hostname': 'f992d058a188',
+      winV: ['', '', ''],
     },
     metrics: {
       cpu: 6.804911,
       iowait: 0.00046491018,
-      load: 0.093782894
+      load: 0.093782894,
     },
     muteTimeout: undefined,
-    name: "mindfield",
-    sources: [
-      "agent"
-    ],
+    name: 'mindfield',
+    sources: ['agent'],
     tagsBySource: {
-      Datadog: [
-        "host:mindfield"
-      ]
+      Datadog: ['host:mindfield'],
     },
-    up: true
-  }
+    up: true,
+  };
 }

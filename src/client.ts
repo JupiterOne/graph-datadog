@@ -7,6 +7,7 @@ import { Role } from '@datadog/datadog-api-client/dist/packages/datadog-api-clie
 import { Host } from '@datadog/datadog-api-client/dist/packages/datadog-api-client-v1/models/Host';
 import { client, v1, v2 } from '@datadog/datadog-api-client';
 import { retry } from '@lifeomic/attempt';
+import fetch from 'node-fetch';
 
 import { IntegrationConfig } from './config';
 
@@ -191,19 +192,55 @@ export class APIClient {
     });
   }
 
+  /**
+   * An existing bug in the datadog package requires the use of node-fetch
+   * for the host endpoint.
+   * @param iteratee
+   */
   public async iterateHosts(iteratee: ResourceIteratee<Host>): Promise<void> {
-    const apiInstance = new v1.HostsApi(this.configuration);
+    const endpoint = '/v1/hosts';
 
-    await this.iterateApi<Host, v1.HostsApi>(
-      apiInstance,
-      'listHosts',
-      'hostList',
-      async (hosts) => {
-        for (const host of hosts) {
-          await iteratee(host);
-        }
-      },
-    );
+    const requestSize = 1000;
+    let cursor = 0;
+    let totalReturned = 0;
+    let totalMatching = 0;
+
+    do {
+      const url = `https://api.${this.config.datadogHost}/api${endpoint}?count=${requestSize}&start=${cursor}`;
+
+      const response = await retry(
+        async () => {
+          return await fetch(url, {
+            method: 'GET',
+            headers: {
+              Accept: 'application/json',
+              'DD-API-KEY': this.config.datadogApiKey,
+              'DD-APPLICATION-KEY': this.config.datadogAppKey,
+            },
+          });
+        },
+        {
+          delay: 5000,
+          factor: 2,
+          maxAttempts: 5,
+          // only retry on 429
+          handleError: (err, context) => {
+            if (err.code !== 429 && err.code < 500) {
+              context.abort();
+            }
+          },
+        },
+      );
+
+      const data = await response.json();
+      for (const host of data.host_list) {
+        await iteratee(host);
+      }
+
+      cursor = data.totalReturned + 1;
+      totalReturned = data.total_returned;
+      totalMatching = data.total_matching;
+    } while (totalReturned < totalMatching);
   }
 }
 

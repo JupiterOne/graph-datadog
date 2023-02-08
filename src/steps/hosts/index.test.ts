@@ -85,7 +85,6 @@ describe('#fetchHosts', () => {
           socketHostname: { type: 'string' },
           osName: { type: 'string' },
           osVersion: { type: 'string' },
-
         },
       },
     });
