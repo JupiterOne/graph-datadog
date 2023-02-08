@@ -53,8 +53,8 @@ export function createOrganizationAccountEntity(account: Organization) {
         subscriptionType: account.subscription?.type,
         'settings.privateWidgetShare': account.settings?.privateWidgetShare,
         'settings.samlEnabled': account.settings?.saml?.enabled,
-        'settings.samlAutocreateAccessRole':
-          account.settings?.samlAutocreateAccessRole,
+        'settings.samlAutocreateAccessRoles': account.settings
+          ?.samlAutocreateAccessRole as 'st' | 'adm' | 'ro' | 'ERROR',
         'settings.samlAutocreateUsersDomainsEnabled':
           account.settings?.samlAutocreateUsersDomains?.enabled,
         'settings.samlCanBeEnabled': account.settings?.samlCanBeEnabled,
