@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.1 - 2023-02-09
+
+### Changed
+
+- Upgrades sdk-\* dependencies
+- Updated date parsing precision
+- Fixed vulnerable packages
+
 ## 2.2.0 - 2023-02-09
 
 ### Changed

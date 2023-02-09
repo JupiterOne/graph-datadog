@@ -190,7 +190,7 @@ Object {
       "platform": "darwin",
       "processor": "Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz",
       "pythonVersion": "3.8.16",
-      "reportedOn": 1675970245,
+      "reportedOn": 1675970245000,
       "socketFqdn": "localhost",
       "socketHostname": "spoulton-MBP.local",
       "sources": Array [
@@ -391,7 +391,7 @@ Object {
       "platform": "linux",
       "processor": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
       "pythonVersion": "3.8.16",
-      "reportedOn": 1675969918,
+      "reportedOn": 1675969918000,
       "socketFqdn": "dcef9da35b3a",
       "socketHostname": "dcef9da35b3a",
       "sources": Array [
@@ -600,7 +600,7 @@ Object {
       "platform": "darwin",
       "processor": "Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz",
       "pythonVersion": "3.8.16",
-      "reportedOn": 1675970245,
+      "reportedOn": 1675970245000,
       "socketFqdn": "localhost",
       "socketHostname": "spoulton-MBP.local",
       "sources": Array [
@@ -801,7 +801,7 @@ Object {
       "platform": "linux",
       "processor": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
       "pythonVersion": "3.8.16",
-      "reportedOn": 1675969918,
+      "reportedOn": 1675969918000,
       "socketFqdn": "dcef9da35b3a",
       "socketHostname": "dcef9da35b3a",
       "sources": Array [
