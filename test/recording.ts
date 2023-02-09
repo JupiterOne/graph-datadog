@@ -14,6 +14,6 @@ export function setupDatadogRecording(
     mutateEntry: mutations.unzipGzippedRecordingEntry,
     ...input,
     redactedRequestHeaders: ['dd-application-key', 'dd-api-key'],
-    redactedResponseHeaders: ['content-security-policy']
+    redactedResponseHeaders: ['content-security-policy'],
   });
 }

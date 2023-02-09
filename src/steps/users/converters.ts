@@ -2,6 +2,7 @@ import { User } from '@datadog/datadog-api-client/dist/packages/datadog-api-clie
 import {
   createIntegrationEntity,
   Entity,
+  parseTimePropertyValue,
 } from '@jupiterone/integration-sdk-core';
 
 import { Entities } from '../constants';
@@ -18,6 +19,8 @@ export function createUserEntity(user: User): Entity | null {
         _type: Entities.USER._type,
         _class: Entities.USER._class,
         _key: getUserKey(user.attributes?.email as string),
+        createdOn: parseTimePropertyValue(user.attributes?.createdAt),
+        updatedOn: parseTimePropertyValue(user.attributes?.modifiedAt),
         username: user.attributes?.handle,
         email: user.attributes?.email,
         id: user.attributes?.email,

@@ -37,7 +37,7 @@
     "@jupiterone/integration-sdk-testing": "^8.22.0"
   },
   "dependencies": {
-    "@datadog/datadog-api-client": "^1.2.0",
+    "@datadog/datadog-api-client": "^1.9.0",
     "@lifeomic/attempt": "^3.0.1"
   }
 }
