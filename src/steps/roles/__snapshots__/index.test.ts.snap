@@ -34,7 +34,7 @@ Object {
               "createdAt": 2023-02-06T17:22:04.673Z,
               "modifiedAt": 2023-02-06T17:22:04.718Z,
               "name": "Datadog Admin Role",
-              "userCount": 4,
+              "userCount": 3,
             },
             "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
@@ -510,7 +510,7 @@ Object {
       "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
       "modifiedAt": 1675704124718,
       "name": "Datadog Admin Role",
-      "userCount": 4,
+      "userCount": 3,
     },
     Object {
       "_class": Array [
@@ -1174,7 +1174,7 @@ Object {
               "createdAt": 2023-02-06T17:22:04.673Z,
               "modifiedAt": 2023-02-06T17:22:04.718Z,
               "name": "Datadog Admin Role",
-              "userCount": 4,
+              "userCount": 3,
             },
             "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
@@ -1650,7 +1650,7 @@ Object {
       "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
       "modifiedAt": 1675704124718,
       "name": "Datadog Admin Role",
-      "userCount": 4,
+      "userCount": 3,
     },
     Object {
       "_class": Array [
