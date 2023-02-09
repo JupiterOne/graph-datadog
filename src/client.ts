@@ -237,7 +237,7 @@ export class APIClient {
         await iteratee(host);
       }
 
-      cursor = data.totalReturned + 1;
+      cursor = data.total_returned + 1;
       totalReturned = data.total_returned;
       totalMatching = data.total_matching;
     } while (totalReturned < totalMatching);
