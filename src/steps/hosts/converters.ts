@@ -31,7 +31,7 @@ export function createHostEntity(host: Host): Entity {
         awsName: host.awsName,
         hostname: host.hostName,
         isMuted: host.isMuted,
-        reportedOn: parseTimePropertyValue(host.lastReportedTime),
+        reportedOn: parseTimePropertyValue(host.lastReportedTime, 'sec'),
         name: host.name,
         sources: host.sources,
         state: host.up ? 'running' : 'stopped',
