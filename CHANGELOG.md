@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.0 - 2023-02-09
+
+### Changed
+
+- Upgrade `@datadog/datadog-api-client` to 1.9.0 to fix host parsing issue
+- Added `createdOn` and `updatedOn` to `datadog_user` entity
+- Updated host osVersion logic
+
 ## 2.1.1 - 2023-01-25
 
 ### Added

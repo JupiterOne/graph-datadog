@@ -7,15 +7,16 @@ import {
 
 import { Entities } from '../constants';
 
-const SYSTEM_PROPERTIES = ['nixV', 'macV', 'winV'];
-
 export function getHostKey(id: number): string {
   return `datadog_host:${id}`;
 }
 
 export function createHostEntity(host: Host): Entity {
-  const systemProperty = SYSTEM_PROPERTIES.find(p => host.meta && host.meta[p]);
-  const [osName, osVersion] = host.meta && systemProperty ? host.meta[systemProperty] : ['N/A', 'N/A'];
+  const osVersion = determineOsVersion({
+    macV: host.meta?.macV,
+    winV: host.meta?.winV,
+    nixV: host.meta?.nixV,
+  });
 
   return createIntegrationEntity({
     entityData: {
@@ -42,9 +43,46 @@ export function createHostEntity(host: Host): Entity {
         pythonVersion: host.meta?.pythonV,
         socketFqdn: host.meta?.socketFqdn,
         socketHostname: host.meta?.socketHostname,
-        osName,
-        osVersion
+        osName: host.meta?.platform,
+        osVersion,
       },
     },
   });
+}
+
+/**
+ * Determines the OS Version details
+ * Example data:
+ *  [ '13.1', [ '', '', '' ], 'amd64' ]
+ *  [ 'ubuntu', '22.04', '' ]
+ * @param macV
+ * @param winV
+ * @param nixV
+ */
+export function determineOsVersion({ macV, winV, nixV }) {
+  if (Array.isArray(macV) && macV.filter((prop) => prop).length > 0) {
+    return reduceOsVersion(macV);
+  } else if (Array.isArray(winV) && winV.filter((prop) => prop).length > 0) {
+    return reduceOsVersion(winV);
+  } else if (Array.isArray(nixV) && nixV.filter((prop) => prop).length > 0) {
+    return reduceOsVersion(nixV);
+  }
+}
+
+/**
+ * Produces a single string that includes all provided data.
+ * @param version
+ */
+function reduceOsVersion(version) {
+  return version
+    .filter((prop) => prop)
+    .map((prop) => {
+      if (Array.isArray(prop)) {
+        return prop.filter((prop) => prop).join(' ');
+      } else {
+        return prop;
+      }
+    })
+    .filter((prop) => prop)
+    .join(' ');
 }

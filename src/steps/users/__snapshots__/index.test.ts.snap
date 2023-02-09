@@ -25,29 +25,29 @@ Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:development@jupiterone.dev",
+      "_key": "datadog_user:adam.pierson@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-15T15:06:20.927Z,
+              "createdAt": 2023-02-08T22:58:43.168Z,
               "disabled": false,
-              "email": "development@jupiterone.dev",
-              "handle": "development@jupiterone.dev",
-              "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-              "modifiedAt": 2021-11-15T15:06:20.971Z,
-              "name": "JupiterOne Development",
+              "email": "adam.pierson@jupiterone.com",
+              "handle": "adam.pierson@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:58:43.170Z,
+              "name": null,
               "serviceAccount": false,
-              "status": "Active",
+              "status": "Pending",
               "title": null,
-              "verified": true,
+              "verified": false,
             },
-            "id": "96bd2d93-4625-11ec-a18c-da7ad0900002",
+            "id": "2291d7de-a804-11ed-9c3a-a68c4111a92c",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -56,7 +56,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -68,43 +68,102 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675897123168,
       "disabled": false,
-      "displayName": "JupiterOne Development",
-      "email": "development@jupiterone.dev",
-      "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-      "id": "development@jupiterone.dev",
-      "name": "JupiterOne Development",
-      "username": "development@jupiterone.dev",
+      "displayName": "adam.pierson@jupiterone.com",
+      "email": "adam.pierson@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+      "id": "adam.pierson@jupiterone.com",
+      "name": "adam.pierson@jupiterone.com",
+      "updatedOn": 1675897123170,
+      "username": "adam.pierson@jupiterone.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-06T17:22:05.007Z,
+              "disabled": false,
+              "email": "samuel.poulton+datadog@jupiterone.com",
+              "handle": "samuel.poulton+datadog@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+              "modifiedAt": 2023-02-06T17:22:05.009Z,
+              "name": "Sam",
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "c6b39333-a642-11ed-a5dc-dacccf448f0a",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": true,
+      "createdOn": 1675704125007,
+      "disabled": false,
+      "displayName": "Sam",
+      "email": "samuel.poulton+datadog@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+      "id": "samuel.poulton+datadog@jupiterone.com",
+      "name": "Sam",
+      "updatedOn": 1675704125009,
+      "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:stefan@creativice.com",
+      "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-12-28T13:48:08.440Z,
+              "createdAt": 2023-02-06T20:40:48.291Z,
               "disabled": false,
-              "email": "stefan@creativice.com",
-              "handle": "stefan@creativice.com",
-              "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-              "modifiedAt": 2021-12-28T13:50:45.873Z,
+              "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "handle": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+              "modifiedAt": 2023-02-06T20:41:21.984Z,
               "name": null,
               "serviceAccount": false,
               "status": "Active",
               "title": null,
               "verified": true,
             },
-            "id": "ca36998a-67e4-11ec-b129-da7ad0900002",
+            "id": "89886562-a65e-11ed-b318-aedf7c3c5fc4",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -113,7 +172,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+                    "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -125,43 +184,44 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675716048291,
       "disabled": false,
-      "displayName": "stefan@creativice.com",
-      "email": "stefan@creativice.com",
-      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-      "id": "stefan@creativice.com",
-      "name": "stefan@creativice.com",
-      "username": "stefan@creativice.com",
+      "displayName": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+      "id": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "name": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "updatedOn": 1675716081984,
+      "username": "samuel.poulton+datadogreadonly@jupiterone.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:viragsf@gmail.com",
+      "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-16T18:25:08.049Z,
+              "createdAt": 2023-02-08T22:59:12.616Z,
               "disabled": false,
-              "email": "viragsf@gmail.com",
-              "handle": "viragsf@gmail.com",
-              "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-              "modifiedAt": 2021-11-16T18:27:43.851Z,
+              "email": "sjdpoulton+datadogwindows@gmail.com",
+              "handle": "sjdpoulton+datadogwindows@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:59:12.619Z,
               "name": null,
               "serviceAccount": false,
-              "status": "Active",
+              "status": "Pending",
               "title": null,
-              "verified": true,
+              "verified": false,
             },
-            "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
+            "id": "341f51b3-a804-11ed-a6eb-72f64c52a3b0",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -170,7 +230,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -182,14 +242,73 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675897152616,
       "disabled": false,
-      "displayName": "viragsf@gmail.com",
-      "email": "viragsf@gmail.com",
-      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-      "id": "viragsf@gmail.com",
-      "name": "viragsf@gmail.com",
-      "username": "viragsf@gmail.com",
+      "displayName": "sjdpoulton+datadogwindows@gmail.com",
+      "email": "sjdpoulton+datadogwindows@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+      "id": "sjdpoulton+datadogwindows@gmail.com",
+      "name": "sjdpoulton+datadogwindows@gmail.com",
+      "updatedOn": 1675897152619,
+      "username": "sjdpoulton+datadogwindows@gmail.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:sjdpoulton@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-08T22:58:26.452Z,
+              "disabled": true,
+              "email": "sjdpoulton@gmail.com",
+              "handle": "sjdpoulton@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+              "modifiedAt": 2023-02-09T19:44:07.545Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Disabled",
+              "title": null,
+              "verified": true,
+            },
+            "id": "189b2486-a804-11ed-8be8-62091e98faf5",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": false,
+      "createdOn": 1675897106452,
+      "disabled": true,
+      "displayName": "sjdpoulton@gmail.com",
+      "email": "sjdpoulton@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+      "id": "sjdpoulton@gmail.com",
+      "name": "sjdpoulton@gmail.com",
+      "updatedOn": 1675971847545,
+      "username": "sjdpoulton@gmail.com",
       "verified": true,
     },
   ],
@@ -197,24 +316,40 @@ Object {
     Object {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:development@jupiterone.dev",
-      "_toEntityKey": "datadog_user:development@jupiterone.dev",
+      "_key": "datadog_account:local-integration|has|datadog_user:adam.pierson@jupiterone.com",
+      "_toEntityKey": "datadog_user:adam.pierson@jupiterone.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:stefan@creativice.com",
-      "_toEntityKey": "datadog_user:stefan@creativice.com",
+      "_key": "datadog_account:local-integration|has|datadog_user:samuel.poulton+datadog@jupiterone.com",
+      "_toEntityKey": "datadog_user:samuel.poulton+datadog@jupiterone.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
     Object {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
-      "_key": "datadog_account:local-integration|has|datadog_user:viragsf@gmail.com",
-      "_toEntityKey": "datadog_user:viragsf@gmail.com",
+      "_key": "datadog_account:local-integration|has|datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
+      "_toEntityKey": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
+      "_type": "datadog_account_has_user",
+      "displayName": "HAS",
+    },
+    Object {
+      "_class": "HAS",
+      "_fromEntityKey": "datadog_account:local-integration",
+      "_key": "datadog_account:local-integration|has|datadog_user:sjdpoulton+datadogwindows@gmail.com",
+      "_toEntityKey": "datadog_user:sjdpoulton+datadogwindows@gmail.com",
+      "_type": "datadog_account_has_user",
+      "displayName": "HAS",
+    },
+    Object {
+      "_class": "HAS",
+      "_fromEntityKey": "datadog_account:local-integration",
+      "_key": "datadog_account:local-integration|has|datadog_user:sjdpoulton@gmail.com",
+      "_toEntityKey": "datadog_user:sjdpoulton@gmail.com",
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
@@ -224,8 +359,8 @@ Object {
     "datadog_user",
     "datadog_account_has_user",
   ],
-  "numCollectedEntities": 4,
-  "numCollectedRelationships": 3,
+  "numCollectedEntities": 6,
+  "numCollectedRelationships": 5,
 }
 `;
 
@@ -236,29 +371,29 @@ Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:development@jupiterone.dev",
+      "_key": "datadog_user:adam.pierson@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-15T15:06:20.927Z,
+              "createdAt": 2023-02-08T22:58:43.168Z,
               "disabled": false,
-              "email": "development@jupiterone.dev",
-              "handle": "development@jupiterone.dev",
-              "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-              "modifiedAt": 2021-11-15T15:06:20.971Z,
-              "name": "JupiterOne Development",
+              "email": "adam.pierson@jupiterone.com",
+              "handle": "adam.pierson@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:58:43.170Z,
+              "name": null,
               "serviceAccount": false,
-              "status": "Active",
+              "status": "Pending",
               "title": null,
-              "verified": true,
+              "verified": false,
             },
-            "id": "96bd2d93-4625-11ec-a18c-da7ad0900002",
+            "id": "2291d7de-a804-11ed-9c3a-a68c4111a92c",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -267,7 +402,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -279,43 +414,102 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675897123168,
       "disabled": false,
-      "displayName": "JupiterOne Development",
-      "email": "development@jupiterone.dev",
-      "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-      "id": "development@jupiterone.dev",
-      "name": "JupiterOne Development",
-      "username": "development@jupiterone.dev",
+      "displayName": "adam.pierson@jupiterone.com",
+      "email": "adam.pierson@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+      "id": "adam.pierson@jupiterone.com",
+      "name": "adam.pierson@jupiterone.com",
+      "updatedOn": 1675897123170,
+      "username": "adam.pierson@jupiterone.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-06T17:22:05.007Z,
+              "disabled": false,
+              "email": "samuel.poulton+datadog@jupiterone.com",
+              "handle": "samuel.poulton+datadog@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+              "modifiedAt": 2023-02-06T17:22:05.009Z,
+              "name": "Sam",
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "c6b39333-a642-11ed-a5dc-dacccf448f0a",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": true,
+      "createdOn": 1675704125007,
+      "disabled": false,
+      "displayName": "Sam",
+      "email": "samuel.poulton+datadog@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+      "id": "samuel.poulton+datadog@jupiterone.com",
+      "name": "Sam",
+      "updatedOn": 1675704125009,
+      "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:stefan@creativice.com",
+      "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-12-28T13:48:08.440Z,
+              "createdAt": 2023-02-06T20:40:48.291Z,
               "disabled": false,
-              "email": "stefan@creativice.com",
-              "handle": "stefan@creativice.com",
-              "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-              "modifiedAt": 2021-12-28T13:50:45.873Z,
+              "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "handle": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+              "modifiedAt": 2023-02-06T20:41:21.984Z,
               "name": null,
               "serviceAccount": false,
               "status": "Active",
               "title": null,
               "verified": true,
             },
-            "id": "ca36998a-67e4-11ec-b129-da7ad0900002",
+            "id": "89886562-a65e-11ed-b318-aedf7c3c5fc4",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -324,7 +518,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+                    "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -336,43 +530,44 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675716048291,
       "disabled": false,
-      "displayName": "stefan@creativice.com",
-      "email": "stefan@creativice.com",
-      "icon": "https://secure.gravatar.com/avatar/5a764b0f770a7bfe74cdc94afea04ed6?s=48&d=retro",
-      "id": "stefan@creativice.com",
-      "name": "stefan@creativice.com",
-      "username": "stefan@creativice.com",
+      "displayName": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+      "id": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "name": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "updatedOn": 1675716081984,
+      "username": "samuel.poulton+datadogreadonly@jupiterone.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:viragsf@gmail.com",
+      "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-16T18:25:08.049Z,
+              "createdAt": 2023-02-08T22:59:12.616Z,
               "disabled": false,
-              "email": "viragsf@gmail.com",
-              "handle": "viragsf@gmail.com",
-              "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-              "modifiedAt": 2021-11-16T18:27:43.851Z,
+              "email": "sjdpoulton+datadogwindows@gmail.com",
+              "handle": "sjdpoulton+datadogwindows@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:59:12.619Z,
               "name": null,
               "serviceAccount": false,
-              "status": "Active",
+              "status": "Pending",
               "title": null,
-              "verified": true,
+              "verified": false,
             },
-            "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
+            "id": "341f51b3-a804-11ed-a6eb-72f64c52a3b0",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -381,7 +576,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -393,41 +588,100 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675897152616,
       "disabled": false,
-      "displayName": "viragsf@gmail.com",
-      "email": "viragsf@gmail.com",
-      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-      "id": "viragsf@gmail.com",
-      "name": "viragsf@gmail.com",
-      "username": "viragsf@gmail.com",
+      "displayName": "sjdpoulton+datadogwindows@gmail.com",
+      "email": "sjdpoulton+datadogwindows@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+      "id": "sjdpoulton+datadogwindows@gmail.com",
+      "name": "sjdpoulton+datadogwindows@gmail.com",
+      "updatedOn": 1675897152619,
+      "username": "sjdpoulton+datadogwindows@gmail.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:sjdpoulton@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-08T22:58:26.452Z,
+              "disabled": true,
+              "email": "sjdpoulton@gmail.com",
+              "handle": "sjdpoulton@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+              "modifiedAt": 2023-02-09T19:44:07.545Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Disabled",
+              "title": null,
+              "verified": true,
+            },
+            "id": "189b2486-a804-11ed-8be8-62091e98faf5",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": false,
+      "createdOn": 1675897106452,
+      "disabled": true,
+      "displayName": "sjdpoulton@gmail.com",
+      "email": "sjdpoulton@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+      "id": "sjdpoulton@gmail.com",
+      "name": "sjdpoulton@gmail.com",
+      "updatedOn": 1675971847545,
+      "username": "sjdpoulton@gmail.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "AccessRole",
       ],
-      "_key": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_key": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
-              "createdAt": 2021-11-15T15:06:19.928Z,
-              "modifiedAt": 2021-11-15T15:06:19.928Z,
+              "createdAt": 2023-02-06T17:22:04.673Z,
+              "modifiedAt": 2023-02-06T17:22:04.718Z,
               "name": "Datadog Admin Role",
-              "userCount": 2,
+              "userCount": 3,
             },
-            "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+            "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
                 "data": Array [
                   RelationshipToPermissionData {
-                    "id": "984a2bd4-d3b4-11e8-a1ff-a7f660d43029",
+                    "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
+                    "id": "5e605652-dd12-11e8-9e53-375565b8970e",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -439,7 +693,15 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "7d7c98ac-dd12-11e8-9e56-93700598622d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "811ac4ca-dd12-11e8-9e57-676a7f0beef9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "84aa3ae4-dd12-11e8-9e58-a373a514ccd0",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -495,7 +757,7 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "58b412cc-ff6d-11eb-bc9c-da7ad0900002",
+                    "id": "5c1680d0-ff6d-11eb-a494-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -595,10 +857,6 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "fcac2ad8-2843-11eb-8315-0fe47949d625",
-                    "type": "permissions",
-                  },
-                  RelationshipToPermissionData {
                     "id": "417ba636-2dce-11eb-84c0-6bce5b0d9de0",
                     "type": "permissions",
                   },
@@ -639,11 +897,23 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "edfd5e74-801f-11eb-96d8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edfd5e75-801f-11eb-96d8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "bf0dcf7c-90af-11eb-9b82-da7ad0900002",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
                     "id": "bf0dcf7d-90af-11eb-9b82-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "7df222b6-a45c-11eb-a0af-da7ad0900002",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -679,31 +949,187 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef24-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7ccb44-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef25-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7d422c-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
+                    "id": "1ba2f2d8-16c7-11ec-b77d-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "c95412b9-16c7-11ec-85c0-da7ad0900002",
+                    "id": "1ba4caa4-16c7-11ec-b77d-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "26c79920-1703-11ec-85d2-da7ad0900002",
+                    "id": "34438974-1703-11ec-9521-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "020a563c-56a4-11ec-a982-da7ad0900002",
+                    "id": "ec69c9ae-4792-11ec-a4e4-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "id": "ec6a85f6-4792-11ec-a4e4-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0c07b512-56a4-11ec-9d67-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "e2371690-574f-11ec-9b69-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8dbe76fe-5884-11ec-82c1-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8dbeed46-5884-11ec-82c1-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc8e272-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc97610-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc93150-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc821fc-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc894fc-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caea6b48-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caeae1ea-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "3f036aae-966b-11ec-87f8-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "20c31f82-b9b4-11ec-8235-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6df8628a-c59e-11ec-9bfe-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "10292ba2-d5e9-11ec-88e7-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "102a0414-d5e9-11ec-88e7-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "b8006c56-e5c4-11ec-bfd9-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee67f20-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee6d434-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee61788-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "279926d0-f311-11ec-9321-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edb17ed8-173a-11ed-b3c2-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edb0ad50-173a-11ed-b3c2-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "55840f46-1761-11ed-996f-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "69e8902a-1cd8-11ed-ad41-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4244b3e6-248a-11ed-96ae-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f2161f6-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f21ab3e-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f208ea2-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f210b2a-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "841eaad4-7a4c-11ed-bf7d-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "841f1d52-7a4c-11ed-bf7d-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f80e6ce-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f81882c-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f807a68-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f8143ee-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f81cfe4-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f8289ca-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "277f3524-7d61-11ed-9f04-da7ad0900005",
                     "type": "permissions",
                   },
                 ],
@@ -714,30 +1140,30 @@ Object {
         },
       ],
       "_type": "datadog_role",
-      "createdAt": 1636988779928,
+      "createdAt": 1675704124673,
       "createdOn": undefined,
       "displayName": "Datadog Admin Role",
-      "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
-      "modifiedAt": 1636988779928,
+      "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+      "modifiedAt": 1675704124718,
       "name": "Datadog Admin Role",
-      "userCount": 2,
+      "userCount": 3,
     },
     Object {
       "_class": Array [
         "AccessRole",
       ],
-      "_key": "datadog_role:96bd2d91-4625-11ec-a18c-da7ad0900002",
+      "_key": "datadog_role:c69142e2-a642-11ed-a333-da7ad0900005",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
-              "createdAt": 2021-11-15T15:06:20.366Z,
-              "modifiedAt": 2021-11-15T15:06:20.366Z,
+              "createdAt": 2023-02-06T17:22:04.781Z,
+              "modifiedAt": 2023-02-06T17:22:04.804Z,
               "name": "Datadog Read Only Role",
               "userCount": 0,
             },
-            "id": "96bd2d91-4625-11ec-a18c-da7ad0900002",
+            "id": "c69142e2-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
                 "data": Array [
@@ -802,19 +1228,71 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef24-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7ccb44-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef25-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7d422c-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
+                    "id": "1ba2f2d8-16c7-11ec-b77d-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "id": "ec69c9ae-4792-11ec-a4e4-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "e2371690-574f-11ec-9b69-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8dbe76fe-5884-11ec-82c1-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc8e272-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc821fc-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caea6b48-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee67f20-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edb0ad50-173a-11ed-b3c2-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "69e8902a-1cd8-11ed-ad41-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f2161f6-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f208ea2-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "841eaad4-7a4c-11ed-bf7d-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f80e6ce-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "277f3524-7d61-11ed-9f04-da7ad0900005",
                     "type": "permissions",
                   },
                 ],
@@ -825,11 +1303,11 @@ Object {
         },
       ],
       "_type": "datadog_role",
-      "createdAt": 1636988780366,
+      "createdAt": 1675704124781,
       "createdOn": undefined,
       "displayName": "Datadog Read Only Role",
-      "id": "96bd2d91-4625-11ec-a18c-da7ad0900002",
-      "modifiedAt": 1636988780366,
+      "id": "c69142e2-a642-11ed-a333-da7ad0900005",
+      "modifiedAt": 1675704124804,
       "name": "Datadog Read Only Role",
       "userCount": 0,
     },
@@ -837,23 +1315,27 @@ Object {
       "_class": Array [
         "AccessRole",
       ],
-      "_key": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_key": "datadog_role:c689fed8-a642-11ed-a5ee-da7ad0900005",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
-              "createdAt": 2021-11-15T15:06:20.176Z,
-              "modifiedAt": 2021-11-15T15:06:20.176Z,
+              "createdAt": 2023-02-06T17:22:04.733Z,
+              "modifiedAt": 2023-02-06T17:22:04.768Z,
               "name": "Datadog Standard Role",
-              "userCount": 1,
+              "userCount": 0,
             },
-            "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
+            "id": "c689fed8-a642-11ed-a5ee-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
                 "data": Array [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "5e605652-dd12-11e8-9e53-375565b8970e",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -865,7 +1347,15 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "7d7c98ac-dd12-11e8-9e56-93700598622d",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "811ac4ca-dd12-11e8-9e57-676a7f0beef9",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "84aa3ae4-dd12-11e8-9e58-a373a514ccd0",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -917,7 +1407,7 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "58b412cc-ff6d-11eb-bc9c-da7ad0900002",
+                    "id": "5c1680d0-ff6d-11eb-a494-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
@@ -977,10 +1467,6 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "fcac2ad8-2843-11eb-8315-0fe47949d625",
-                    "type": "permissions",
-                  },
-                  RelationshipToPermissionData {
                     "id": "417ba636-2dce-11eb-84c0-6bce5b0d9de0",
                     "type": "permissions",
                   },
@@ -1021,6 +1507,10 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
+                    "id": "12efc210-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
                     "id": "97971c1c-e895-11eb-b13c-da7ad0900002",
                     "type": "permissions",
                   },
@@ -1029,27 +1519,147 @@ Object {
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef24-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7ccb44-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "7605ef25-f376-11eb-b90b-da7ad0900002",
+                    "id": "aa7d422c-fa13-11eb-b17c-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "c95412b8-16c7-11ec-85c0-da7ad0900002",
+                    "id": "1ba2f2d8-16c7-11ec-b77d-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "c95412b9-16c7-11ec-85c0-da7ad0900002",
+                    "id": "1ba4caa4-16c7-11ec-b77d-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "26c79920-1703-11ec-85d2-da7ad0900002",
+                    "id": "34438974-1703-11ec-9521-da7ad0900005",
                     "type": "permissions",
                   },
                   RelationshipToPermissionData {
-                    "id": "8e4d6b6e-5750-11ec-a9f4-da7ad0900002",
+                    "id": "ec69c9ae-4792-11ec-a4e4-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "ec6a85f6-4792-11ec-a4e4-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "e2371690-574f-11ec-9b69-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "8dbe76fe-5884-11ec-82c1-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc8e272-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc97610-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc93150-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc821fc-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "0fc894fc-8500-11ec-9176-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caea6b48-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caeae1ea-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "20c31f82-b9b4-11ec-8235-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6df8628a-c59e-11ec-9bfe-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee67f20-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee6d434-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee61788-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edb17ed8-173a-11ed-b3c2-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "edb0ad50-173a-11ed-b3c2-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "69e8902a-1cd8-11ed-ad41-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4244b3e6-248a-11ed-96ae-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f2161f6-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f21ab3e-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f208ea2-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4f210b2a-55d9-11ed-9831-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "841eaad4-7a4c-11ed-bf7d-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "841f1d52-7a4c-11ed-bf7d-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f80e6ce-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f81882c-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f8143ee-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f8289ca-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "277f3524-7d61-11ed-9f04-da7ad0900005",
                     "type": "permissions",
                   },
                 ],
@@ -1060,37 +1670,124 @@ Object {
         },
       ],
       "_type": "datadog_role",
-      "createdAt": 1636988780176,
+      "createdAt": 1675704124733,
       "createdOn": undefined,
       "displayName": "Datadog Standard Role",
-      "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
-      "modifiedAt": 1636988780176,
+      "id": "c689fed8-a642-11ed-a5ee-da7ad0900005",
+      "modifiedAt": 1675704124768,
       "name": "Datadog Standard Role",
+      "userCount": 0,
+    },
+    Object {
+      "_class": Array [
+        "AccessRole",
+      ],
+      "_key": "datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": Role {
+            "attributes": RoleAttributes {
+              "createdAt": 2023-02-06T21:55:35.227Z,
+              "modifiedAt": 2023-02-06T21:55:35.257Z,
+              "name": "J1 Ingestion",
+              "userCount": 1,
+            },
+            "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
+            "relationships": RoleResponseRelationships {
+              "permissions": RelationshipToPermissions {
+                "data": Array [
+                  RelationshipToPermissionData {
+                    "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "4441648c-d8b1-11e9-a77a-1b899a04b304",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "46a301da-ec5c-11ea-aa9f-73bedeab67ee",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "417ba636-2dce-11eb-84c0-6bce5b0d9de0",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "12efc20e-d36c-11eb-a9b8-da7ad0900002",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "aa7ccb44-fa13-11eb-b17c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "caea6b48-9a59-11ec-b6fc-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "eee67f20-e746-11ec-a905-da7ad0900005",
+                    "type": "permissions",
+                  },
+                  RelationshipToPermissionData {
+                    "id": "6f80e6ce-7aff-11ed-836c-da7ad0900005",
+                    "type": "permissions",
+                  },
+                ],
+              },
+            },
+            "type": "roles",
+          },
+        },
+      ],
+      "_type": "datadog_role",
+      "createdAt": 1675720535227,
+      "createdOn": undefined,
+      "displayName": "J1 Ingestion",
+      "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
+      "modifiedAt": 1675720535257,
+      "name": "J1 Ingestion",
       "userCount": 1,
     },
   ],
   "collectedRelationships": Array [
     Object {
       "_class": "ASSIGNED",
-      "_fromEntityKey": "datadog_user:development@jupiterone.dev",
-      "_key": "datadog_user:development@jupiterone.dev|assigned|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
-      "_toEntityKey": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_user:samuel.poulton+datadog@jupiterone.com",
+      "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_toEntityKey": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
     Object {
       "_class": "ASSIGNED",
-      "_fromEntityKey": "datadog_user:viragsf@gmail.com",
-      "_key": "datadog_user:viragsf@gmail.com|assigned|datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
-      "_toEntityKey": "datadog_role:96bd2d8f-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_user:sjdpoulton@gmail.com",
+      "_key": "datadog_user:sjdpoulton@gmail.com|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_toEntityKey": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
     Object {
       "_class": "ASSIGNED",
-      "_fromEntityKey": "datadog_user:stefan@creativice.com",
-      "_key": "datadog_user:stefan@creativice.com|assigned|datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
-      "_toEntityKey": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
+      "_fromEntityKey": "datadog_user:adam.pierson@jupiterone.com",
+      "_key": "datadog_user:adam.pierson@jupiterone.com|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_toEntityKey": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_type": "datadog_user_assigned_role",
+      "displayName": "ASSIGNED",
+    },
+    Object {
+      "_class": "ASSIGNED",
+      "_fromEntityKey": "datadog_user:sjdpoulton+datadogwindows@gmail.com",
+      "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_toEntityKey": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
+      "_type": "datadog_user_assigned_role",
+      "displayName": "ASSIGNED",
+    },
+    Object {
+      "_class": "ASSIGNED",
+      "_fromEntityKey": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
+      "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com|assigned|datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
+      "_toEntityKey": "datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
@@ -1100,8 +1797,8 @@ Object {
     "datadog_role",
     "datadog_user_assigned_role",
   ],
-  "numCollectedEntities": 6,
-  "numCollectedRelationships": 3,
+  "numCollectedEntities": 9,
+  "numCollectedRelationships": 5,
 }
 `;
 
@@ -1112,29 +1809,29 @@ Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:development@jupiterone.dev",
+      "_key": "datadog_user:adam.pierson@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-15T15:06:20.927Z,
+              "createdAt": 2023-02-08T22:58:43.168Z,
               "disabled": false,
-              "email": "development@jupiterone.dev",
-              "handle": "development@jupiterone.dev",
-              "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-              "modifiedAt": 2021-11-15T15:06:20.971Z,
-              "name": "JupiterOne Development",
+              "email": "adam.pierson@jupiterone.com",
+              "handle": "adam.pierson@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:58:43.170Z,
+              "name": null,
               "serviceAccount": false,
-              "status": "Active",
+              "status": "Pending",
               "title": null,
-              "verified": true,
+              "verified": false,
             },
-            "id": "96bd2d93-4625-11ec-a18c-da7ad0900002",
+            "id": "2291d7de-a804-11ed-9c3a-a68c4111a92c",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -1143,7 +1840,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -1155,43 +1852,102 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675897123168,
       "disabled": false,
-      "displayName": "JupiterOne Development",
-      "email": "development@jupiterone.dev",
-      "icon": "https://secure.gravatar.com/avatar/6db8032ecd87512265a13d4bc9e6483f?s=48&d=retro",
-      "id": "development@jupiterone.dev",
-      "name": "JupiterOne Development",
-      "username": "development@jupiterone.dev",
+      "displayName": "adam.pierson@jupiterone.com",
+      "email": "adam.pierson@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/5abd8230461366dd40ab803831f7ad97?s=48&d=retro",
+      "id": "adam.pierson@jupiterone.com",
+      "name": "adam.pierson@jupiterone.com",
+      "updatedOn": 1675897123170,
+      "username": "adam.pierson@jupiterone.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-06T17:22:05.007Z,
+              "disabled": false,
+              "email": "samuel.poulton+datadog@jupiterone.com",
+              "handle": "samuel.poulton+datadog@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+              "modifiedAt": 2023-02-06T17:22:05.009Z,
+              "name": "Sam",
+              "serviceAccount": false,
+              "status": "Active",
+              "title": null,
+              "verified": true,
+            },
+            "id": "c6b39333-a642-11ed-a5dc-dacccf448f0a",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": true,
+      "createdOn": 1675704125007,
+      "disabled": false,
+      "displayName": "Sam",
+      "email": "samuel.poulton+datadog@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/3abd96d1b13f534665ee60673c3d5d17?s=48&d=retro",
+      "id": "samuel.poulton+datadog@jupiterone.com",
+      "name": "Sam",
+      "updatedOn": 1675704125009,
+      "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
     Object {
       "_class": Array [
         "User",
       ],
-      "_key": "datadog_user:viragsf@gmail.com",
+      "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com",
       "_rawData": Array [
         Object {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
-              "createdAt": 2021-11-16T18:25:08.049Z,
+              "createdAt": 2023-02-06T20:40:48.291Z,
               "disabled": false,
-              "email": "viragsf@gmail.com",
-              "handle": "viragsf@gmail.com",
-              "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-              "modifiedAt": 2021-11-16T18:27:43.851Z,
+              "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "handle": "samuel.poulton+datadogreadonly@jupiterone.com",
+              "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+              "modifiedAt": 2023-02-06T20:41:21.984Z,
               "name": null,
               "serviceAccount": false,
               "status": "Active",
               "title": null,
               "verified": true,
             },
-            "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
+            "id": "89886562-a65e-11ed-b318-aedf7c3c5fc4",
             "relationships": UserResponseRelationships {
               "org": RelationshipToOrganization {
                 "data": RelationshipToOrganizationData {
-                  "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
                   "type": "orgs",
                 },
               },
@@ -1200,7 +1956,7 @@ Object {
               "roles": RelationshipToRoles {
                 "data": Array [
                   RelationshipToRoleData {
-                    "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
+                    "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
                   },
                 ],
@@ -1212,14 +1968,131 @@ Object {
       ],
       "_type": "datadog_user",
       "active": true,
-      "createdOn": undefined,
+      "createdOn": 1675716048291,
       "disabled": false,
-      "displayName": "viragsf@gmail.com",
-      "email": "viragsf@gmail.com",
-      "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-      "id": "viragsf@gmail.com",
-      "name": "viragsf@gmail.com",
-      "username": "viragsf@gmail.com",
+      "displayName": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "email": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "icon": "https://secure.gravatar.com/avatar/fb37b754fd97957a1f7247440179a082?s=48&d=retro",
+      "id": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "name": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "updatedOn": 1675716081984,
+      "username": "samuel.poulton+datadogreadonly@jupiterone.com",
+      "verified": true,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-08T22:59:12.616Z,
+              "disabled": false,
+              "email": "sjdpoulton+datadogwindows@gmail.com",
+              "handle": "sjdpoulton+datadogwindows@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+              "modifiedAt": 2023-02-08T22:59:12.619Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Pending",
+              "title": null,
+              "verified": false,
+            },
+            "id": "341f51b3-a804-11ed-a6eb-72f64c52a3b0",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": true,
+      "createdOn": 1675897152616,
+      "disabled": false,
+      "displayName": "sjdpoulton+datadogwindows@gmail.com",
+      "email": "sjdpoulton+datadogwindows@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/b10f5d68d629feaf740d2d19bfcf6614?s=48&d=retro",
+      "id": "sjdpoulton+datadogwindows@gmail.com",
+      "name": "sjdpoulton+datadogwindows@gmail.com",
+      "updatedOn": 1675897152619,
+      "username": "sjdpoulton+datadogwindows@gmail.com",
+      "verified": false,
+    },
+    Object {
+      "_class": Array [
+        "User",
+      ],
+      "_key": "datadog_user:sjdpoulton@gmail.com",
+      "_rawData": Array [
+        Object {
+          "name": "default",
+          "rawData": User {
+            "attributes": UserAttributes {
+              "createdAt": 2023-02-08T22:58:26.452Z,
+              "disabled": true,
+              "email": "sjdpoulton@gmail.com",
+              "handle": "sjdpoulton@gmail.com",
+              "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+              "modifiedAt": 2023-02-09T19:44:07.545Z,
+              "name": null,
+              "serviceAccount": false,
+              "status": "Disabled",
+              "title": null,
+              "verified": true,
+            },
+            "id": "189b2486-a804-11ed-8be8-62091e98faf5",
+            "relationships": UserResponseRelationships {
+              "org": RelationshipToOrganization {
+                "data": RelationshipToOrganizationData {
+                  "id": "c6619d4e-a642-11ed-82e5-da7ad0900005",
+                  "type": "orgs",
+                },
+              },
+              "otherOrgs": undefined,
+              "otherUsers": undefined,
+              "roles": RelationshipToRoles {
+                "data": Array [
+                  RelationshipToRoleData {
+                    "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
+                    "type": "roles",
+                  },
+                ],
+              },
+            },
+            "type": "users",
+          },
+        },
+      ],
+      "_type": "datadog_user",
+      "active": false,
+      "createdOn": 1675897106452,
+      "disabled": true,
+      "displayName": "sjdpoulton@gmail.com",
+      "email": "sjdpoulton@gmail.com",
+      "icon": "https://secure.gravatar.com/avatar/9103c452ca68dee40d75c28a1332f9a5?s=48&d=retro",
+      "id": "sjdpoulton@gmail.com",
+      "name": "sjdpoulton@gmail.com",
+      "updatedOn": 1675971847545,
+      "username": "sjdpoulton@gmail.com",
       "verified": true,
     },
   ],
@@ -1227,7 +2100,7 @@ Object {
   "encounteredTypes": Array [
     "datadog_user",
   ],
-  "numCollectedEntities": 2,
+  "numCollectedEntities": 5,
   "numCollectedRelationships": 0,
 }
 `;
