@@ -19,6 +19,7 @@
 
 - Datadog supports authentication via an API key and an application key.
 - You must have permission in JupiterOne to install new integrations.
+- You must have the Tenable Administrator role to use the J1 integration.
 
 ## Support
 
