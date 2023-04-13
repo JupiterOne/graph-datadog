@@ -56,7 +56,7 @@ If you need help with this integration, please contact
   needs. You may leave this as `DISABLED` and manually execute the integration.
 - Enter the **Datadog API Key** generated for use by JupiterOne.
 - Optionally, enter the Datadog organization ID for your organization. You can
-  find this by going to https://docs.datadoghq.com/api/latest/organizations/#list-your-managed-organizations.
+  find this by sending a GET request to the endpoint listed at https://docs.datadoghq.com/api/latest/organizations/#list-your-managed-organizations.
 
 4. Click **Create Configuration** once all values are provided.
 
