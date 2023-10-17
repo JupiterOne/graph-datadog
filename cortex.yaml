@@ -1,0 +1,12 @@
+openapi: 3.0.1
+info:
+  title: '@jupiterone/graph-datadog'
+  description: A JupiterOne Integration for ingesting data for the Datadog
+  x-cortex-git:
+    github:
+      repository: JupiterOne/graph-datadog
+  x-cortex-owners:
+    - type: group
+      name: JupiterOne/integrations
+  x-cortex-service-groups: tier-4
+  x-cortex-tag: '@jupiterone/graph-datadog'
