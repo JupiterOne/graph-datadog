@@ -63,7 +63,7 @@ export async function buildUserRoleRelationships({
         roleEntity.id as string,
         async (user) => {
           const userEntity = await jobState.findEntity(
-            getUserKey(user.attributes?.email as string),
+            getUserKey(user.attributes?.email as string, user.id as string),
           );
           if (userEntity) {
             await jobState.addRelationship(

@@ -5,7 +5,7 @@ Object {
   "_class": Array [
     "User",
   ],
-  "_key": "datadog_user:viragsf@gmail.com",
+  "_key": "datadog_user:viragsf@gmail.com:86ec37f2-470a-11ec-a204-da7ad0900002",
   "_rawData": Array [
     Object {
       "name": "default",
@@ -49,7 +49,7 @@ Object {
   "displayName": "viragsf@gmail.com",
   "email": "viragsf@gmail.com",
   "icon": "https://secure.gravatar.com/avatar/edd1469180957cee25d7753ef4a84a13?s=48&d=retro",
-  "id": "viragsf@gmail.com",
+  "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
   "name": "viragsf@gmail.com",
   "updatedOn": 1637087263851,
   "username": "viragsf@gmail.com",
