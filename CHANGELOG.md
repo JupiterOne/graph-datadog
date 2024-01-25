@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.2 - 2024-01-25
+
+### Changed
+
+- INT-10265: update user key to avoid duplicates
+
 ## 2.2.1 - 2023-02-09
 
 ### Changed
