@@ -7,8 +7,8 @@ import {
 
 import { Entities } from '../constants';
 
-export function getUserKey(id: string): string {
-  return `datadog_user:${id}`;
+export function getUserKey(email: string, id: string): string {
+  return `datadog_user:${email}:${id}`;
 }
 
 export function createUserEntity(user: User): Entity | null {
@@ -18,12 +18,12 @@ export function createUserEntity(user: User): Entity | null {
       assign: {
         _type: Entities.USER._type,
         _class: Entities.USER._class,
-        _key: getUserKey(user.attributes?.email as string),
+        _key: getUserKey(user.attributes?.email as string, user.id as string),
         createdOn: parseTimePropertyValue(user.attributes?.createdAt),
         updatedOn: parseTimePropertyValue(user.attributes?.modifiedAt),
         username: user.attributes?.handle,
         email: user.attributes?.email,
-        id: user.attributes?.email,
+        id: user.id,
         name: user.attributes?.name || user.attributes?.email,
         verified: user.attributes?.verified,
         disabled: user.attributes?.disabled,
