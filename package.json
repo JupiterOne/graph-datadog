@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/graph-datadog",
-  "version": "2.2.2",
+  "version": "2.2.4",
   "description": "A JupiterOne Integration for ingesting data for the Datadog",
   "repository": {
     "type": "git",
