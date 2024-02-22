@@ -4,6 +4,7 @@ import {
   Entity,
   IntegrationStep,
   IntegrationStepExecutionContext,
+  IntegrationWarnEventName,
 } from '@jupiterone/integration-sdk-core';
 import { createAPIClient } from '../../client';
 import { IntegrationConfig } from '../../config';
@@ -18,16 +19,27 @@ import { createHostEntity } from './converters';
 export async function fetchHosts({
   instance,
   jobState,
+  logger,
 }: IntegrationStepExecutionContext<IntegrationConfig>) {
   const apiClient = createAPIClient(instance.config);
+  try {
+    await apiClient.iterateHosts(async (host) => {
+      const hostEntity = createHostEntity(host);
 
-  await apiClient.iterateHosts(async (host) => {
-    const hostEntity = createHostEntity(host);
-
-    if (hostEntity) {
-      await jobState.addEntity(hostEntity);
+      if (hostEntity) {
+        await jobState.addEntity(hostEntity);
+      }
+    });
+  } catch (error) {
+    if (error.status == 403) {
+      logger.publishWarnEvent({
+        name: IntegrationWarnEventName.MissingPermission,
+        description: `Received authorization error when attempting to call list.hosts. Please use an unscoped application Key to gather this information.`,
+      });
+    } else {
+      throw error;
     }
-  });
+  }
 }
 
 export async function buildAccountHostRelationships({

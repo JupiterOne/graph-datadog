@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#buildAccountRoleRelationships should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "Account",
       ],
       "_key": "datadog_account:local-integration",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
-          "rawData": Object {
+          "rawData": {
             "name": "Local Integration",
           },
         },
@@ -21,13 +21,13 @@ Object {
       "displayName": "Local Integration",
       "name": "Local Integration",
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -39,7 +39,7 @@ Object {
             "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -512,13 +512,13 @@ Object {
       "name": "Datadog Admin Role",
       "userCount": 3,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c69142e2-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -530,7 +530,7 @@ Object {
             "id": "c69142e2-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "5e605652-dd12-11e8-9e53-375565b8970e",
                     "type": "permissions",
@@ -675,13 +675,13 @@ Object {
       "name": "Datadog Read Only Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c689fed8-a642-11ed-a5ee-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -693,7 +693,7 @@ Object {
             "id": "c689fed8-a642-11ed-a5ee-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -1042,13 +1042,13 @@ Object {
       "name": "Datadog Standard Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1060,7 +1060,7 @@ Object {
             "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
                     "type": "permissions",
@@ -1114,8 +1114,8 @@ Object {
       "userCount": 1,
     },
   ],
-  "collectedRelationships": Array [
-    Object {
+  "collectedRelationships": [
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
@@ -1123,7 +1123,7 @@ Object {
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_role:c69142e2-a642-11ed-a333-da7ad0900005",
@@ -1131,7 +1131,7 @@ Object {
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_role:c689fed8-a642-11ed-a5ee-da7ad0900005",
@@ -1139,7 +1139,7 @@ Object {
       "_type": "datadog_account_has_role",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
@@ -1148,7 +1148,7 @@ Object {
       "displayName": "HAS",
     },
   ],
-  "encounteredTypes": Array [
+  "encounteredTypes": [
     "datadog_account",
     "datadog_role",
     "datadog_account_has_role",
@@ -1159,15 +1159,15 @@ Object {
 `;
 
 exports[`#fetchRoles should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1179,7 +1179,7 @@ Object {
             "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -1652,13 +1652,13 @@ Object {
       "name": "Datadog Admin Role",
       "userCount": 3,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c69142e2-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1670,7 +1670,7 @@ Object {
             "id": "c69142e2-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "5e605652-dd12-11e8-9e53-375565b8970e",
                     "type": "permissions",
@@ -1815,13 +1815,13 @@ Object {
       "name": "Datadog Read Only Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c689fed8-a642-11ed-a5ee-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1833,7 +1833,7 @@ Object {
             "id": "c689fed8-a642-11ed-a5ee-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -2182,13 +2182,13 @@ Object {
       "name": "Datadog Standard Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -2200,7 +2200,7 @@ Object {
             "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
                     "type": "permissions",
@@ -2254,8 +2254,8 @@ Object {
       "userCount": 1,
     },
   ],
-  "collectedRelationships": Array [],
-  "encounteredTypes": Array [
+  "collectedRelationships": [],
+  "encounteredTypes": [
     "datadog_role",
   ],
   "numCollectedEntities": 4,

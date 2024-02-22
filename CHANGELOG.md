@@ -8,6 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.6 - 2024-02-22
+
+### Changed
+
+- Add latest sdk version
+
+## 2.2.5 - 2024-02-22
+
+### Changed
+
+- INT-10310 - Handle permissions missing
+
 ## 2.2.4 - 2024-01-25
 
 ### Changed
