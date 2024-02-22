@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#createAccountEntity should convert to entity 1`] = `
-Object {
-  "_class": Array [
+{
+  "_class": [
     "Account",
   ],
   "_key": "datadog_account:local-integration",
-  "_rawData": Array [
-    Object {
+  "_rawData": [
+    {
       "name": "default",
-      "rawData": Object {
+      "rawData": {
         "name": "Local Integration",
       },
     },
@@ -22,40 +22,40 @@ Object {
 `;
 
 exports[`#createOrganizationAccountEntity should convert to entity 1`] = `
-Object {
-  "_class": Array [
+{
+  "_class": [
     "Account",
   ],
   "_key": "datadog_account:96bd2d8e-4625-11ec-a18c-da7ad0900002",
-  "_rawData": Array [
-    Object {
+  "_rawData": [
+    {
       "name": "default",
-      "rawData": Object {
-        "billing": Object {
+      "rawData": {
+        "billing": {
           "type": "cc",
         },
         "name": "JupiterOne Inc.",
         "publicId": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
-        "settings": Object {
+        "settings": {
           "privateWidgetShare": false,
-          "saml": Object {
+          "saml": {
             "enabled": false,
           },
           "samlAutocreateAccessRole": "st",
-          "samlAutocreateUsersDomains": Object {
-            "domains": Array [],
+          "samlAutocreateUsersDomains": {
+            "domains": [],
             "enabled": false,
           },
           "samlCanBeEnabled": false,
-          "samlIdpInitiatedLogin": Object {
+          "samlIdpInitiatedLogin": {
             "enabled": false,
           },
           "samlIdpMetadataUploaded": false,
-          "samlStrictMode": Object {
+          "samlStrictMode": {
             "enabled": false,
           },
         },
-        "subscription": Object {
+        "subscription": {
           "type": "pro",
         },
       },

@@ -1,30 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#createRoleEntity should convert to entity 1`] = `
-Object {
-  "_class": Array [
+{
+  "_class": [
     "AccessRole",
   ],
   "_key": "datadog_role:96bd2d90-4625-11ec-a18c-da7ad0900002",
-  "_rawData": Array [
-    Object {
+  "_rawData": [
+    {
       "name": "default",
-      "rawData": Object {
-        "attributes": Object {
+      "rawData": {
+        "attributes": {
           "createdAt": 2021-11-15T15:06:20.176Z,
           "modifiedAt": 2021-11-15T15:06:20.176Z,
           "name": "Datadog Standard Role",
           "userCount": 0,
         },
         "id": "96bd2d90-4625-11ec-a18c-da7ad0900002",
-        "relationships": Object {
-          "permissions": Object {
-            "data": Array [
-              Object {
+        "relationships": {
+          "permissions": {
+            "data": [
+              {
                 "id": "c95412b9-16c7-11ec-85c0-da7ad0900002",
                 "type": "permissions",
               },
-              Object {
+              {
                 "id": "26c79920-1703-11ec-85d2-da7ad0900002",
                 "type": "permissions",
               },

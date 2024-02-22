@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#createUserEntity should convert to entity 1`] = `
-Object {
-  "_class": Array [
+{
+  "_class": [
     "User",
   ],
   "_key": "datadog_user:viragsf@gmail.com:86ec37f2-470a-11ec-a204-da7ad0900002",
-  "_rawData": Array [
-    Object {
+  "_rawData": [
+    {
       "name": "default",
-      "rawData": Object {
-        "attributes": Object {
+      "rawData": {
+        "attributes": {
           "createdAt": 2021-11-16T18:25:08.049Z,
           "disabled": false,
           "email": "viragsf@gmail.com",
@@ -22,16 +22,16 @@ Object {
           "verified": true,
         },
         "id": "86ec37f2-470a-11ec-a204-da7ad0900002",
-        "relationships": Object {
-          "org": Object {
-            "data": Object {
+        "relationships": {
+          "org": {
+            "data": {
               "id": "96bd2d8e-4625-11ec-a18c-da7ad0900002",
               "type": "orgs",
             },
           },
-          "roles": Object {
-            "data": Array [
-              Object {
+          "roles": {
+            "data": [
+              {
                 "id": "96bd2d8f-4625-11ec-a18c-da7ad0900002",
                 "type": "roles",
               },

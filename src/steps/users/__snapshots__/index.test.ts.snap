@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#buildAccountUserRelationships should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "Account",
       ],
       "_key": "datadog_account:local-integration",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
-          "rawData": Object {
+          "rawData": {
             "name": "Local Integration",
           },
         },
@@ -21,13 +21,13 @@ Object {
       "displayName": "Local Integration",
       "name": "Local Integration",
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -54,7 +54,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -79,13 +79,13 @@ Object {
       "username": "adam.pierson@jupiterone.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -112,7 +112,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -137,13 +137,13 @@ Object {
       "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -170,7 +170,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
@@ -195,13 +195,13 @@ Object {
       "username": "samuel.poulton+datadogreadonly@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -228,7 +228,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -253,13 +253,13 @@ Object {
       "username": "sjdpoulton+datadogwindows@gmail.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -286,7 +286,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -312,8 +312,8 @@ Object {
       "verified": true,
     },
   ],
-  "collectedRelationships": Array [
-    Object {
+  "collectedRelationships": [
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c",
@@ -321,7 +321,7 @@ Object {
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a",
@@ -329,7 +329,7 @@ Object {
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4",
@@ -337,7 +337,7 @@ Object {
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0",
@@ -345,7 +345,7 @@ Object {
       "_type": "datadog_account_has_user",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5",
@@ -354,7 +354,7 @@ Object {
       "displayName": "HAS",
     },
   ],
-  "encounteredTypes": Array [
+  "encounteredTypes": [
     "datadog_account",
     "datadog_user",
     "datadog_account_has_user",
@@ -365,15 +365,15 @@ Object {
 `;
 
 exports[`#buildUserRoleRelationships should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -400,7 +400,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -425,13 +425,13 @@ Object {
       "username": "adam.pierson@jupiterone.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -458,7 +458,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -483,13 +483,13 @@ Object {
       "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -516,7 +516,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
@@ -541,13 +541,13 @@ Object {
       "username": "samuel.poulton+datadogreadonly@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -574,7 +574,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -599,13 +599,13 @@ Object {
       "username": "sjdpoulton+datadogwindows@gmail.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -632,7 +632,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -657,13 +657,13 @@ Object {
       "username": "sjdpoulton@gmail.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -675,7 +675,7 @@ Object {
             "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -1148,13 +1148,13 @@ Object {
       "name": "Datadog Admin Role",
       "userCount": 3,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c69142e2-a642-11ed-a333-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1166,7 +1166,7 @@ Object {
             "id": "c69142e2-a642-11ed-a333-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "5e605652-dd12-11e8-9e53-375565b8970e",
                     "type": "permissions",
@@ -1311,13 +1311,13 @@ Object {
       "name": "Datadog Read Only Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:c689fed8-a642-11ed-a5ee-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1329,7 +1329,7 @@ Object {
             "id": "c689fed8-a642-11ed-a5ee-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "984d2f00-d3b4-11e8-a200-bb47109e9987",
                     "type": "permissions",
@@ -1678,13 +1678,13 @@ Object {
       "name": "Datadog Standard Role",
       "userCount": 0,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "AccessRole",
       ],
       "_key": "datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Role {
             "attributes": RoleAttributes {
@@ -1696,7 +1696,7 @@ Object {
             "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
             "relationships": RoleResponseRelationships {
               "permissions": RelationshipToPermissions {
-                "data": Array [
+                "data": [
                   RelationshipToPermissionData {
                     "id": "d90f6830-d3d8-11e9-a77a-b3404e5e9ee2",
                     "type": "permissions",
@@ -1750,8 +1750,8 @@ Object {
       "userCount": 1,
     },
   ],
-  "collectedRelationships": Array [
-    Object {
+  "collectedRelationships": [
+    {
       "_class": "ASSIGNED",
       "_fromEntityKey": "datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a",
       "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
@@ -1759,7 +1759,7 @@ Object {
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
-    Object {
+    {
       "_class": "ASSIGNED",
       "_fromEntityKey": "datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5",
       "_key": "datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
@@ -1767,7 +1767,7 @@ Object {
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
-    Object {
+    {
       "_class": "ASSIGNED",
       "_fromEntityKey": "datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c",
       "_key": "datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
@@ -1775,7 +1775,7 @@ Object {
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
-    Object {
+    {
       "_class": "ASSIGNED",
       "_fromEntityKey": "datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0",
       "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0|assigned|datadog_role:c680f6ee-a642-11ed-a333-da7ad0900005",
@@ -1783,7 +1783,7 @@ Object {
       "_type": "datadog_user_assigned_role",
       "displayName": "ASSIGNED",
     },
-    Object {
+    {
       "_class": "ASSIGNED",
       "_fromEntityKey": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4",
       "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4|assigned|datadog_role:fbf4ab24-a668-11ed-b70b-da7ad0900005",
@@ -1792,7 +1792,7 @@ Object {
       "displayName": "ASSIGNED",
     },
   ],
-  "encounteredTypes": Array [
+  "encounteredTypes": [
     "datadog_user",
     "datadog_role",
     "datadog_user_assigned_role",
@@ -1803,15 +1803,15 @@ Object {
 `;
 
 exports[`#fetchUsers should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:adam.pierson@jupiterone.com:2291d7de-a804-11ed-9c3a-a68c4111a92c",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -1838,7 +1838,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -1863,13 +1863,13 @@ Object {
       "username": "adam.pierson@jupiterone.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadog@jupiterone.com:c6b39333-a642-11ed-a5dc-dacccf448f0a",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -1896,7 +1896,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -1921,13 +1921,13 @@ Object {
       "username": "samuel.poulton+datadog@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:samuel.poulton+datadogreadonly@jupiterone.com:89886562-a65e-11ed-b318-aedf7c3c5fc4",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -1954,7 +1954,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "fbf4ab24-a668-11ed-b70b-da7ad0900005",
                     "type": "roles",
@@ -1979,13 +1979,13 @@ Object {
       "username": "samuel.poulton+datadogreadonly@jupiterone.com",
       "verified": true,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton+datadogwindows@gmail.com:341f51b3-a804-11ed-a6eb-72f64c52a3b0",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -2012,7 +2012,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -2037,13 +2037,13 @@ Object {
       "username": "sjdpoulton+datadogwindows@gmail.com",
       "verified": false,
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "User",
       ],
       "_key": "datadog_user:sjdpoulton@gmail.com:189b2486-a804-11ed-8be8-62091e98faf5",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": User {
             "attributes": UserAttributes {
@@ -2070,7 +2070,7 @@ Object {
               "otherOrgs": undefined,
               "otherUsers": undefined,
               "roles": RelationshipToRoles {
-                "data": Array [
+                "data": [
                   RelationshipToRoleData {
                     "id": "c680f6ee-a642-11ed-a333-da7ad0900005",
                     "type": "roles",
@@ -2096,8 +2096,8 @@ Object {
       "verified": true,
     },
   ],
-  "collectedRelationships": Array [],
-  "encounteredTypes": Array [
+  "collectedRelationships": [],
+  "encounteredTypes": [
     "datadog_user",
   ],
   "numCollectedEntities": 5,

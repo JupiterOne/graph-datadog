@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#buildAccountHostRelationships should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "Account",
       ],
       "_key": "datadog_account:local-integration",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
-          "rawData": Object {
+          "rawData": {
             "name": "Local Integration",
           },
         },
@@ -21,19 +21,19 @@ Object {
       "displayName": "Local Integration",
       "name": "Local Integration",
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "Host",
       ],
       "_key": "datadog_host:11654684",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Host {
-            "aliases": Array [
+            "aliases": [
               "spoulton-MBP.local",
             ],
-            "apps": Array [
+            "apps": [
               "agent",
               "ntp",
             ],
@@ -43,8 +43,8 @@ Object {
             "isMuted": false,
             "lastReportedTime": 1675970245,
             "meta": HostMeta {
-              "agentChecks": Array [
-                Array [
+              "agentChecks": [
+                [
                   "io",
                   "io",
                   "io",
@@ -52,7 +52,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "cpu",
                   "cpu",
                   "cpu",
@@ -60,7 +60,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "ntp",
                   "ntp",
                   "ntp:3c427a42a70bbf8",
@@ -68,7 +68,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "network",
                   "network",
                   "network:4b0649b7e11f0772",
@@ -76,7 +76,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "load",
                   "load",
                   "load",
@@ -84,7 +84,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "disk",
                   "disk",
                   "disk:67cc0574430a16ba",
@@ -92,7 +92,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "uptime",
                   "uptime",
                   "uptime",
@@ -100,7 +100,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "memory",
                   "memory",
                   "memory",
@@ -111,20 +111,20 @@ Object {
               ],
               "agentVersion": "7.42.1",
               "cpuCores": 8,
-              "fbsdV": Array [
+              "fbsdV": [
                 null,
                 null,
                 null,
               ],
-              "gohai": "{\\"cpu\\":{\\"cpu_cores\\":\\"8\\",\\"cpu_logical_processors\\":\\"16\\",\\"family\\":\\"6\\",\\"mhz\\":\\"2300\\",\\"model\\":\\"158\\",\\"model_name\\":\\"Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz\\",\\"stepping\\":\\"13\\",\\"vendor_id\\":\\"GenuineIntel\\"},\\"filesystem\\":[{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/\\",\\"name\\":\\"/dev/disk1s1s1\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Preboot\\",\\"name\\":\\"/dev/disk1s3\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/VM\\",\\"name\\":\\"/dev/disk1s5\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Update\\",\\"name\\":\\"/dev/disk1s6\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Data\\",\\"name\\":\\"/dev/disk1s2\\"}],\\"memory\\":{\\"swap_total\\":\\"11264.00M\\",\\"total\\":\\"17179869184\\"},\\"network\\":{\\"interfaces\\":[{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::aede:48ff:fe00:1122\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"ac:de:48:00:11:22\\",\\"name\\":\\"en7\\"},{\\"ipv4\\":[\\"192.168.0.101\\"],\\"ipv4-network\\":\\"192.168.0.0/24\\",\\"ipv6\\":[\\"fe80::1087:6c6e:ae2d:6e64\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"5c:52:30:9d:2e:7e\\",\\"name\\":\\"en0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::64dd:61ff:fe61:b36a\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"66:dd:61:61:b3:6a\\",\\"name\\":\\"awdl0\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en2\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en1\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en3\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en4\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"bridge0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::64dd:61ff:fe61:b36a\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"66:dd:61:61:b3:6a\\",\\"name\\":\\"llw0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::c803:8de1:77c5:66c7\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::5dce:f773:b48c:e1ff\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun1\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::ce81:b1c:bd2c:69e\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun2\\"},{\\"ipv4\\":[\\"192.168.0.114\\"],\\"ipv4-network\\":\\"192.168.0.0/24\\",\\"ipv6\\":[\\"fe80::14af:eaeb:9b56:a318\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"64:4b:f0:20:81:96\\",\\"name\\":\\"en5\\"},{\\"ipv4\\":[\\"192.168.243.62\\"],\\"ipv4-network\\":\\"192.168.243.0/24\\",\\"ipv6\\":[],\\"name\\":\\"utun3\\"}],\\"ipaddress\\":\\"192.168.0.101\\",\\"ipaddressv6\\":\\"fe80::aede:48ff:fe00:1122\\",\\"macaddress\\":\\"5c:52:30:9d:2e:7e\\"},\\"platform\\":{\\"GOOARCH\\":\\"amd64\\",\\"GOOS\\":\\"darwin\\",\\"goV\\":\\"1.18.9\\",\\"hostname\\":\\"spoulton-MBP.local\\",\\"kernel_name\\":\\"Darwin\\",\\"kernel_release\\":\\"22.2.0\\",\\"kernel_version\\":\\"Darwin Kernel Version 22.2.0: Fri Nov 11 02:08:47 PST 2022; root:xnu-8792.61.2~4/RELEASE_X86_64\\",\\"machine\\":\\"x86_64\\",\\"os\\":\\"Darwin\\",\\"processor\\":\\"i386\\"}}",
+              "gohai": "{"cpu":{"cpu_cores":"8","cpu_logical_processors":"16","family":"6","mhz":"2300","model":"158","model_name":"Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz","stepping":"13","vendor_id":"GenuineIntel"},"filesystem":[{"kb_size":"976797816","mounted_on":"/","name":"/dev/disk1s1s1"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Preboot","name":"/dev/disk1s3"},{"kb_size":"976797816","mounted_on":"/System/Volumes/VM","name":"/dev/disk1s5"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Update","name":"/dev/disk1s6"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Data","name":"/dev/disk1s2"}],"memory":{"swap_total":"11264.00M","total":"17179869184"},"network":{"interfaces":[{"ipv4":[],"ipv6":["fe80::aede:48ff:fe00:1122"],"ipv6-network":"fe80::/64","macaddress":"ac:de:48:00:11:22","name":"en7"},{"ipv4":["192.168.0.101"],"ipv4-network":"192.168.0.0/24","ipv6":["fe80::1087:6c6e:ae2d:6e64"],"ipv6-network":"fe80::/64","macaddress":"5c:52:30:9d:2e:7e","name":"en0"},{"ipv4":[],"ipv6":["fe80::64dd:61ff:fe61:b36a"],"ipv6-network":"fe80::/64","macaddress":"66:dd:61:61:b3:6a","name":"awdl0"},{"ipv4":[],"ipv6":[],"name":"en2"},{"ipv4":[],"ipv6":[],"name":"en1"},{"ipv4":[],"ipv6":[],"name":"en3"},{"ipv4":[],"ipv6":[],"name":"en4"},{"ipv4":[],"ipv6":[],"name":"bridge0"},{"ipv4":[],"ipv6":["fe80::64dd:61ff:fe61:b36a"],"ipv6-network":"fe80::/64","macaddress":"66:dd:61:61:b3:6a","name":"llw0"},{"ipv4":[],"ipv6":["fe80::c803:8de1:77c5:66c7"],"ipv6-network":"fe80::/64","name":"utun0"},{"ipv4":[],"ipv6":["fe80::5dce:f773:b48c:e1ff"],"ipv6-network":"fe80::/64","name":"utun1"},{"ipv4":[],"ipv6":["fe80::ce81:b1c:bd2c:69e"],"ipv6-network":"fe80::/64","name":"utun2"},{"ipv4":["192.168.0.114"],"ipv4-network":"192.168.0.0/24","ipv6":["fe80::14af:eaeb:9b56:a318"],"ipv6-network":"fe80::/64","macaddress":"64:4b:f0:20:81:96","name":"en5"},{"ipv4":["192.168.243.62"],"ipv4-network":"192.168.243.0/24","ipv6":[],"name":"utun3"}],"ipaddress":"192.168.0.101","ipaddressv6":"fe80::aede:48ff:fe00:1122","macaddress":"5c:52:30:9d:2e:7e"},"platform":{"GOOARCH":"amd64","GOOS":"darwin","goV":"1.18.9","hostname":"spoulton-MBP.local","kernel_name":"Darwin","kernel_release":"22.2.0","kernel_version":"Darwin Kernel Version 22.2.0: Fri Nov 11 02:08:47 PST 2022; root:xnu-8792.61.2~4/RELEASE_X86_64","machine":"x86_64","os":"Darwin","processor":"i386"}}",
               "installMethod": HostMetaInstallMethod {
                 "installerVersion": "install_script_mac-1.1.0",
                 "tool": "install_script_mac",
                 "toolVersion": "install_script_mac",
               },
-              "macV": Array [
+              "macV": [
                 "13.1",
-                Array [
+                [
                   "",
                   "",
                   "",
@@ -132,7 +132,7 @@ Object {
                 "amd64",
               ],
               "machine": "amd64",
-              "nixV": Array [
+              "nixV": [
                 null,
                 null,
                 null,
@@ -142,7 +142,7 @@ Object {
               "pythonV": "3.8.16",
               "socketFqdn": "localhost",
               "socketHostname": "spoulton-MBP.local",
-              "winV": Array [
+              "winV": [
                 null,
                 null,
                 null,
@@ -155,11 +155,11 @@ Object {
             },
             "muteTimeout": null,
             "name": "spoulton-MBP.local",
-            "sources": Array [
+            "sources": [
               "agent",
             ],
-            "tagsBySource": Object {
-              "Datadog": Array [
+            "tagsBySource": {
+              "Datadog": [
                 "host:spoulton-MBP.local",
               ],
             },
@@ -169,10 +169,10 @@ Object {
       ],
       "_type": "datadog_host",
       "agentVersion": "7.42.1",
-      "aliases": Array [
+      "aliases": [
         "spoulton-MBP.local",
       ],
-      "apps": Array [
+      "apps": [
         "agent",
         "ntp",
       ],
@@ -193,24 +193,24 @@ Object {
       "reportedOn": 1675970245000,
       "socketFqdn": "localhost",
       "socketHostname": "spoulton-MBP.local",
-      "sources": Array [
+      "sources": [
         "agent",
       ],
       "state": "running",
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "Host",
       ],
       "_key": "datadog_host:11909091",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Host {
-            "aliases": Array [
+            "aliases": [
               "docker-desktop",
             ],
-            "apps": Array [
+            "apps": [
               "ntp",
               "agent",
               "container",
@@ -222,8 +222,8 @@ Object {
             "isMuted": false,
             "lastReportedTime": 1675969918,
             "meta": HostMeta {
-              "agentChecks": Array [
-                Array [
+              "agentChecks": [
+                [
                   "network",
                   "network",
                   "network:4b0649b7e11f0772",
@@ -231,7 +231,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "file_handle",
                   "file_handle",
                   "file_handle",
@@ -239,7 +239,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "uptime",
                   "uptime",
                   "uptime",
@@ -247,7 +247,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "docker",
                   "docker",
                   "docker",
@@ -255,7 +255,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "ntp",
                   "ntp",
                   "ntp:3c427a42a70bbf8",
@@ -263,7 +263,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "memory",
                   "memory",
                   "memory",
@@ -271,7 +271,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "load",
                   "load",
                   "load",
@@ -279,7 +279,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "container",
                   "container",
                   "container",
@@ -287,7 +287,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "cpu",
                   "cpu",
                   "cpu",
@@ -295,7 +295,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "io",
                   "io",
                   "io",
@@ -303,7 +303,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "disk",
                   "disk",
                   "disk:67cc0574430a16ba",
@@ -314,24 +314,24 @@ Object {
               ],
               "agentVersion": "7.42.1",
               "cpuCores": 1,
-              "fbsdV": Array [
+              "fbsdV": [
                 "",
                 "",
                 "",
               ],
-              "gohai": "{\\"cpu\\":{\\"cache_size\\":\\"12288 KB\\",\\"cpu_cores\\":\\"6\\",\\"cpu_logical_processors\\":\\"6\\",\\"family\\":\\"6\\",\\"mhz\\":\\"2600.000\\",\\"model\\":\\"158\\",\\"model_name\\":\\"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz\\",\\"stepping\\":\\"10\\",\\"vendor_id\\":\\"GenuineIntel\\"},\\"filesystem\\":[{\\"kb_size\\":\\"61255492\\",\\"mounted_on\\":\\"/\\",\\"name\\":\\"overlay\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/sys/fs/cgroup\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev/shm\\",\\"name\\":\\"shm\\"},{\\"kb_size\\":\\"61255492\\",\\"mounted_on\\":\\"/etc/hosts\\",\\"name\\":\\"/dev/vda1\\"},{\\"kb_size\\":\\"203300\\",\\"mounted_on\\":\\"/var/run/docker.sock\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"10240\\",\\"mounted_on\\":\\"/host/sys/fs/cgroup\\",\\"name\\":\\"cgroup_root\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/proc/acpi\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/sys/firmware\\",\\"name\\":\\"tmpfs\\"}],\\"memory\\":{\\"swap_total\\":\\"1048572kB\\",\\"total\\":\\"2032964kB\\"},\\"network\\":null,\\"platform\\":{\\"GOOARCH\\":\\"amd64\\",\\"GOOS\\":\\"linux\\",\\"goV\\":\\"1.18.9\\",\\"hardware_platform\\":\\"x86_64\\",\\"hostname\\":\\"78f875a26a88\\",\\"kernel_name\\":\\"Linux\\",\\"kernel_release\\":\\"5.10.47-linuxkit\\",\\"kernel_version\\":\\"#1 SMP Sat Jul 3 21:51:47 UTC 2021\\",\\"machine\\":\\"x86_64\\",\\"os\\":\\"GNU/Linux\\",\\"processor\\":\\"x86_64\\"}}",
+              "gohai": "{"cpu":{"cache_size":"12288 KB","cpu_cores":"6","cpu_logical_processors":"6","family":"6","mhz":"2600.000","model":"158","model_name":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","stepping":"10","vendor_id":"GenuineIntel"},"filesystem":[{"kb_size":"61255492","mounted_on":"/","name":"overlay"},{"kb_size":"65536","mounted_on":"/dev","name":"tmpfs"},{"kb_size":"1016480","mounted_on":"/sys/fs/cgroup","name":"tmpfs"},{"kb_size":"65536","mounted_on":"/dev/shm","name":"shm"},{"kb_size":"61255492","mounted_on":"/etc/hosts","name":"/dev/vda1"},{"kb_size":"203300","mounted_on":"/var/run/docker.sock","name":"tmpfs"},{"kb_size":"10240","mounted_on":"/host/sys/fs/cgroup","name":"cgroup_root"},{"kb_size":"1016480","mounted_on":"/proc/acpi","name":"tmpfs"},{"kb_size":"1016480","mounted_on":"/sys/firmware","name":"tmpfs"}],"memory":{"swap_total":"1048572kB","total":"2032964kB"},"network":null,"platform":{"GOOARCH":"amd64","GOOS":"linux","goV":"1.18.9","hardware_platform":"x86_64","hostname":"78f875a26a88","kernel_name":"Linux","kernel_release":"5.10.47-linuxkit","kernel_version":"#1 SMP Sat Jul 3 21:51:47 UTC 2021","machine":"x86_64","os":"GNU/Linux","processor":"x86_64"}}",
               "installMethod": HostMetaInstallMethod {
                 "installerVersion": "docker",
                 "tool": "docker",
                 "toolVersion": "docker",
               },
-              "macV": Array [
+              "macV": [
                 "",
                 "",
                 "",
               ],
               "machine": "amd64",
-              "nixV": Array [
+              "nixV": [
                 "ubuntu",
                 "22.04",
                 "",
@@ -341,7 +341,7 @@ Object {
               "pythonV": "3.8.16",
               "socketFqdn": "dcef9da35b3a",
               "socketHostname": "dcef9da35b3a",
-              "winV": Array [
+              "winV": [
                 "",
                 "",
                 "",
@@ -354,11 +354,11 @@ Object {
             },
             "muteTimeout": null,
             "name": "docker-desktop",
-            "sources": Array [
+            "sources": [
               "agent",
             ],
-            "tagsBySource": Object {
-              "Datadog": Array [
+            "tagsBySource": {
+              "Datadog": [
                 "host:docker-desktop",
               ],
             },
@@ -368,10 +368,10 @@ Object {
       ],
       "_type": "datadog_host",
       "agentVersion": "7.42.1",
-      "aliases": Array [
+      "aliases": [
         "docker-desktop",
       ],
-      "apps": Array [
+      "apps": [
         "ntp",
         "agent",
         "container",
@@ -394,14 +394,14 @@ Object {
       "reportedOn": 1675969918000,
       "socketFqdn": "dcef9da35b3a",
       "socketHostname": "dcef9da35b3a",
-      "sources": Array [
+      "sources": [
         "agent",
       ],
       "state": "running",
     },
   ],
-  "collectedRelationships": Array [
-    Object {
+  "collectedRelationships": [
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_host:11654684",
@@ -409,7 +409,7 @@ Object {
       "_type": "datadog_account_has_host",
       "displayName": "HAS",
     },
-    Object {
+    {
       "_class": "HAS",
       "_fromEntityKey": "datadog_account:local-integration",
       "_key": "datadog_account:local-integration|has|datadog_host:11909091",
@@ -418,7 +418,7 @@ Object {
       "displayName": "HAS",
     },
   ],
-  "encounteredTypes": Array [
+  "encounteredTypes": [
     "datadog_account",
     "datadog_host",
     "datadog_account_has_host",
@@ -429,21 +429,21 @@ Object {
 `;
 
 exports[`#fetchHosts should collect data 1`] = `
-Object {
-  "collectedEntities": Array [
-    Object {
-      "_class": Array [
+{
+  "collectedEntities": [
+    {
+      "_class": [
         "Host",
       ],
       "_key": "datadog_host:11654684",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Host {
-            "aliases": Array [
+            "aliases": [
               "spoulton-MBP.local",
             ],
-            "apps": Array [
+            "apps": [
               "agent",
               "ntp",
             ],
@@ -453,8 +453,8 @@ Object {
             "isMuted": false,
             "lastReportedTime": 1675970245,
             "meta": HostMeta {
-              "agentChecks": Array [
-                Array [
+              "agentChecks": [
+                [
                   "io",
                   "io",
                   "io",
@@ -462,7 +462,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "cpu",
                   "cpu",
                   "cpu",
@@ -470,7 +470,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "ntp",
                   "ntp",
                   "ntp:3c427a42a70bbf8",
@@ -478,7 +478,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "network",
                   "network",
                   "network:4b0649b7e11f0772",
@@ -486,7 +486,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "load",
                   "load",
                   "load",
@@ -494,7 +494,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "disk",
                   "disk",
                   "disk:67cc0574430a16ba",
@@ -502,7 +502,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "uptime",
                   "uptime",
                   "uptime",
@@ -510,7 +510,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "memory",
                   "memory",
                   "memory",
@@ -521,20 +521,20 @@ Object {
               ],
               "agentVersion": "7.42.1",
               "cpuCores": 8,
-              "fbsdV": Array [
+              "fbsdV": [
                 null,
                 null,
                 null,
               ],
-              "gohai": "{\\"cpu\\":{\\"cpu_cores\\":\\"8\\",\\"cpu_logical_processors\\":\\"16\\",\\"family\\":\\"6\\",\\"mhz\\":\\"2300\\",\\"model\\":\\"158\\",\\"model_name\\":\\"Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz\\",\\"stepping\\":\\"13\\",\\"vendor_id\\":\\"GenuineIntel\\"},\\"filesystem\\":[{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/\\",\\"name\\":\\"/dev/disk1s1s1\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Preboot\\",\\"name\\":\\"/dev/disk1s3\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/VM\\",\\"name\\":\\"/dev/disk1s5\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Update\\",\\"name\\":\\"/dev/disk1s6\\"},{\\"kb_size\\":\\"976797816\\",\\"mounted_on\\":\\"/System/Volumes/Data\\",\\"name\\":\\"/dev/disk1s2\\"}],\\"memory\\":{\\"swap_total\\":\\"11264.00M\\",\\"total\\":\\"17179869184\\"},\\"network\\":{\\"interfaces\\":[{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::aede:48ff:fe00:1122\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"ac:de:48:00:11:22\\",\\"name\\":\\"en7\\"},{\\"ipv4\\":[\\"192.168.0.101\\"],\\"ipv4-network\\":\\"192.168.0.0/24\\",\\"ipv6\\":[\\"fe80::1087:6c6e:ae2d:6e64\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"5c:52:30:9d:2e:7e\\",\\"name\\":\\"en0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::64dd:61ff:fe61:b36a\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"66:dd:61:61:b3:6a\\",\\"name\\":\\"awdl0\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en2\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en1\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en3\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"en4\\"},{\\"ipv4\\":[],\\"ipv6\\":[],\\"name\\":\\"bridge0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::64dd:61ff:fe61:b36a\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"66:dd:61:61:b3:6a\\",\\"name\\":\\"llw0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::c803:8de1:77c5:66c7\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun0\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::5dce:f773:b48c:e1ff\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun1\\"},{\\"ipv4\\":[],\\"ipv6\\":[\\"fe80::ce81:b1c:bd2c:69e\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"name\\":\\"utun2\\"},{\\"ipv4\\":[\\"192.168.0.114\\"],\\"ipv4-network\\":\\"192.168.0.0/24\\",\\"ipv6\\":[\\"fe80::14af:eaeb:9b56:a318\\"],\\"ipv6-network\\":\\"fe80::/64\\",\\"macaddress\\":\\"64:4b:f0:20:81:96\\",\\"name\\":\\"en5\\"},{\\"ipv4\\":[\\"192.168.243.62\\"],\\"ipv4-network\\":\\"192.168.243.0/24\\",\\"ipv6\\":[],\\"name\\":\\"utun3\\"}],\\"ipaddress\\":\\"192.168.0.101\\",\\"ipaddressv6\\":\\"fe80::aede:48ff:fe00:1122\\",\\"macaddress\\":\\"5c:52:30:9d:2e:7e\\"},\\"platform\\":{\\"GOOARCH\\":\\"amd64\\",\\"GOOS\\":\\"darwin\\",\\"goV\\":\\"1.18.9\\",\\"hostname\\":\\"spoulton-MBP.local\\",\\"kernel_name\\":\\"Darwin\\",\\"kernel_release\\":\\"22.2.0\\",\\"kernel_version\\":\\"Darwin Kernel Version 22.2.0: Fri Nov 11 02:08:47 PST 2022; root:xnu-8792.61.2~4/RELEASE_X86_64\\",\\"machine\\":\\"x86_64\\",\\"os\\":\\"Darwin\\",\\"processor\\":\\"i386\\"}}",
+              "gohai": "{"cpu":{"cpu_cores":"8","cpu_logical_processors":"16","family":"6","mhz":"2300","model":"158","model_name":"Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz","stepping":"13","vendor_id":"GenuineIntel"},"filesystem":[{"kb_size":"976797816","mounted_on":"/","name":"/dev/disk1s1s1"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Preboot","name":"/dev/disk1s3"},{"kb_size":"976797816","mounted_on":"/System/Volumes/VM","name":"/dev/disk1s5"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Update","name":"/dev/disk1s6"},{"kb_size":"976797816","mounted_on":"/System/Volumes/Data","name":"/dev/disk1s2"}],"memory":{"swap_total":"11264.00M","total":"17179869184"},"network":{"interfaces":[{"ipv4":[],"ipv6":["fe80::aede:48ff:fe00:1122"],"ipv6-network":"fe80::/64","macaddress":"ac:de:48:00:11:22","name":"en7"},{"ipv4":["192.168.0.101"],"ipv4-network":"192.168.0.0/24","ipv6":["fe80::1087:6c6e:ae2d:6e64"],"ipv6-network":"fe80::/64","macaddress":"5c:52:30:9d:2e:7e","name":"en0"},{"ipv4":[],"ipv6":["fe80::64dd:61ff:fe61:b36a"],"ipv6-network":"fe80::/64","macaddress":"66:dd:61:61:b3:6a","name":"awdl0"},{"ipv4":[],"ipv6":[],"name":"en2"},{"ipv4":[],"ipv6":[],"name":"en1"},{"ipv4":[],"ipv6":[],"name":"en3"},{"ipv4":[],"ipv6":[],"name":"en4"},{"ipv4":[],"ipv6":[],"name":"bridge0"},{"ipv4":[],"ipv6":["fe80::64dd:61ff:fe61:b36a"],"ipv6-network":"fe80::/64","macaddress":"66:dd:61:61:b3:6a","name":"llw0"},{"ipv4":[],"ipv6":["fe80::c803:8de1:77c5:66c7"],"ipv6-network":"fe80::/64","name":"utun0"},{"ipv4":[],"ipv6":["fe80::5dce:f773:b48c:e1ff"],"ipv6-network":"fe80::/64","name":"utun1"},{"ipv4":[],"ipv6":["fe80::ce81:b1c:bd2c:69e"],"ipv6-network":"fe80::/64","name":"utun2"},{"ipv4":["192.168.0.114"],"ipv4-network":"192.168.0.0/24","ipv6":["fe80::14af:eaeb:9b56:a318"],"ipv6-network":"fe80::/64","macaddress":"64:4b:f0:20:81:96","name":"en5"},{"ipv4":["192.168.243.62"],"ipv4-network":"192.168.243.0/24","ipv6":[],"name":"utun3"}],"ipaddress":"192.168.0.101","ipaddressv6":"fe80::aede:48ff:fe00:1122","macaddress":"5c:52:30:9d:2e:7e"},"platform":{"GOOARCH":"amd64","GOOS":"darwin","goV":"1.18.9","hostname":"spoulton-MBP.local","kernel_name":"Darwin","kernel_release":"22.2.0","kernel_version":"Darwin Kernel Version 22.2.0: Fri Nov 11 02:08:47 PST 2022; root:xnu-8792.61.2~4/RELEASE_X86_64","machine":"x86_64","os":"Darwin","processor":"i386"}}",
               "installMethod": HostMetaInstallMethod {
                 "installerVersion": "install_script_mac-1.1.0",
                 "tool": "install_script_mac",
                 "toolVersion": "install_script_mac",
               },
-              "macV": Array [
+              "macV": [
                 "13.1",
-                Array [
+                [
                   "",
                   "",
                   "",
@@ -542,7 +542,7 @@ Object {
                 "amd64",
               ],
               "machine": "amd64",
-              "nixV": Array [
+              "nixV": [
                 null,
                 null,
                 null,
@@ -552,7 +552,7 @@ Object {
               "pythonV": "3.8.16",
               "socketFqdn": "localhost",
               "socketHostname": "spoulton-MBP.local",
-              "winV": Array [
+              "winV": [
                 null,
                 null,
                 null,
@@ -565,11 +565,11 @@ Object {
             },
             "muteTimeout": null,
             "name": "spoulton-MBP.local",
-            "sources": Array [
+            "sources": [
               "agent",
             ],
-            "tagsBySource": Object {
-              "Datadog": Array [
+            "tagsBySource": {
+              "Datadog": [
                 "host:spoulton-MBP.local",
               ],
             },
@@ -579,10 +579,10 @@ Object {
       ],
       "_type": "datadog_host",
       "agentVersion": "7.42.1",
-      "aliases": Array [
+      "aliases": [
         "spoulton-MBP.local",
       ],
-      "apps": Array [
+      "apps": [
         "agent",
         "ntp",
       ],
@@ -603,24 +603,24 @@ Object {
       "reportedOn": 1675970245000,
       "socketFqdn": "localhost",
       "socketHostname": "spoulton-MBP.local",
-      "sources": Array [
+      "sources": [
         "agent",
       ],
       "state": "running",
     },
-    Object {
-      "_class": Array [
+    {
+      "_class": [
         "Host",
       ],
       "_key": "datadog_host:11909091",
-      "_rawData": Array [
-        Object {
+      "_rawData": [
+        {
           "name": "default",
           "rawData": Host {
-            "aliases": Array [
+            "aliases": [
               "docker-desktop",
             ],
-            "apps": Array [
+            "apps": [
               "ntp",
               "agent",
               "container",
@@ -632,8 +632,8 @@ Object {
             "isMuted": false,
             "lastReportedTime": 1675969918,
             "meta": HostMeta {
-              "agentChecks": Array [
-                Array [
+              "agentChecks": [
+                [
                   "network",
                   "network",
                   "network:4b0649b7e11f0772",
@@ -641,7 +641,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "file_handle",
                   "file_handle",
                   "file_handle",
@@ -649,7 +649,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "uptime",
                   "uptime",
                   "uptime",
@@ -657,7 +657,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "docker",
                   "docker",
                   "docker",
@@ -665,7 +665,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "ntp",
                   "ntp",
                   "ntp:3c427a42a70bbf8",
@@ -673,7 +673,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "memory",
                   "memory",
                   "memory",
@@ -681,7 +681,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "load",
                   "load",
                   "load",
@@ -689,7 +689,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "container",
                   "container",
                   "container",
@@ -697,7 +697,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "cpu",
                   "cpu",
                   "cpu",
@@ -705,7 +705,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "io",
                   "io",
                   "io",
@@ -713,7 +713,7 @@ Object {
                   "",
                   "",
                 ],
-                Array [
+                [
                   "disk",
                   "disk",
                   "disk:67cc0574430a16ba",
@@ -724,24 +724,24 @@ Object {
               ],
               "agentVersion": "7.42.1",
               "cpuCores": 1,
-              "fbsdV": Array [
+              "fbsdV": [
                 "",
                 "",
                 "",
               ],
-              "gohai": "{\\"cpu\\":{\\"cache_size\\":\\"12288 KB\\",\\"cpu_cores\\":\\"6\\",\\"cpu_logical_processors\\":\\"6\\",\\"family\\":\\"6\\",\\"mhz\\":\\"2600.000\\",\\"model\\":\\"158\\",\\"model_name\\":\\"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz\\",\\"stepping\\":\\"10\\",\\"vendor_id\\":\\"GenuineIntel\\"},\\"filesystem\\":[{\\"kb_size\\":\\"61255492\\",\\"mounted_on\\":\\"/\\",\\"name\\":\\"overlay\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/sys/fs/cgroup\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"65536\\",\\"mounted_on\\":\\"/dev/shm\\",\\"name\\":\\"shm\\"},{\\"kb_size\\":\\"61255492\\",\\"mounted_on\\":\\"/etc/hosts\\",\\"name\\":\\"/dev/vda1\\"},{\\"kb_size\\":\\"203300\\",\\"mounted_on\\":\\"/var/run/docker.sock\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"10240\\",\\"mounted_on\\":\\"/host/sys/fs/cgroup\\",\\"name\\":\\"cgroup_root\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/proc/acpi\\",\\"name\\":\\"tmpfs\\"},{\\"kb_size\\":\\"1016480\\",\\"mounted_on\\":\\"/sys/firmware\\",\\"name\\":\\"tmpfs\\"}],\\"memory\\":{\\"swap_total\\":\\"1048572kB\\",\\"total\\":\\"2032964kB\\"},\\"network\\":null,\\"platform\\":{\\"GOOARCH\\":\\"amd64\\",\\"GOOS\\":\\"linux\\",\\"goV\\":\\"1.18.9\\",\\"hardware_platform\\":\\"x86_64\\",\\"hostname\\":\\"78f875a26a88\\",\\"kernel_name\\":\\"Linux\\",\\"kernel_release\\":\\"5.10.47-linuxkit\\",\\"kernel_version\\":\\"#1 SMP Sat Jul 3 21:51:47 UTC 2021\\",\\"machine\\":\\"x86_64\\",\\"os\\":\\"GNU/Linux\\",\\"processor\\":\\"x86_64\\"}}",
+              "gohai": "{"cpu":{"cache_size":"12288 KB","cpu_cores":"6","cpu_logical_processors":"6","family":"6","mhz":"2600.000","model":"158","model_name":"Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz","stepping":"10","vendor_id":"GenuineIntel"},"filesystem":[{"kb_size":"61255492","mounted_on":"/","name":"overlay"},{"kb_size":"65536","mounted_on":"/dev","name":"tmpfs"},{"kb_size":"1016480","mounted_on":"/sys/fs/cgroup","name":"tmpfs"},{"kb_size":"65536","mounted_on":"/dev/shm","name":"shm"},{"kb_size":"61255492","mounted_on":"/etc/hosts","name":"/dev/vda1"},{"kb_size":"203300","mounted_on":"/var/run/docker.sock","name":"tmpfs"},{"kb_size":"10240","mounted_on":"/host/sys/fs/cgroup","name":"cgroup_root"},{"kb_size":"1016480","mounted_on":"/proc/acpi","name":"tmpfs"},{"kb_size":"1016480","mounted_on":"/sys/firmware","name":"tmpfs"}],"memory":{"swap_total":"1048572kB","total":"2032964kB"},"network":null,"platform":{"GOOARCH":"amd64","GOOS":"linux","goV":"1.18.9","hardware_platform":"x86_64","hostname":"78f875a26a88","kernel_name":"Linux","kernel_release":"5.10.47-linuxkit","kernel_version":"#1 SMP Sat Jul 3 21:51:47 UTC 2021","machine":"x86_64","os":"GNU/Linux","processor":"x86_64"}}",
               "installMethod": HostMetaInstallMethod {
                 "installerVersion": "docker",
                 "tool": "docker",
                 "toolVersion": "docker",
               },
-              "macV": Array [
+              "macV": [
                 "",
                 "",
                 "",
               ],
               "machine": "amd64",
-              "nixV": Array [
+              "nixV": [
                 "ubuntu",
                 "22.04",
                 "",
@@ -751,7 +751,7 @@ Object {
               "pythonV": "3.8.16",
               "socketFqdn": "dcef9da35b3a",
               "socketHostname": "dcef9da35b3a",
-              "winV": Array [
+              "winV": [
                 "",
                 "",
                 "",
@@ -764,11 +764,11 @@ Object {
             },
             "muteTimeout": null,
             "name": "docker-desktop",
-            "sources": Array [
+            "sources": [
               "agent",
             ],
-            "tagsBySource": Object {
-              "Datadog": Array [
+            "tagsBySource": {
+              "Datadog": [
                 "host:docker-desktop",
               ],
             },
@@ -778,10 +778,10 @@ Object {
       ],
       "_type": "datadog_host",
       "agentVersion": "7.42.1",
-      "aliases": Array [
+      "aliases": [
         "docker-desktop",
       ],
-      "apps": Array [
+      "apps": [
         "ntp",
         "agent",
         "container",
@@ -804,14 +804,14 @@ Object {
       "reportedOn": 1675969918000,
       "socketFqdn": "dcef9da35b3a",
       "socketHostname": "dcef9da35b3a",
-      "sources": Array [
+      "sources": [
         "agent",
       ],
       "state": "running",
     },
   ],
-  "collectedRelationships": Array [],
-  "encounteredTypes": Array [
+  "collectedRelationships": [],
+  "encounteredTypes": [
     "datadog_host",
   ],
   "numCollectedEntities": 2,
